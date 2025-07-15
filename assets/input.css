@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.nav-list{
+    @apply after:duration-100 after:content-[''] after:block after:mt-0.5 after:w-0 hover:after:w-full after:h-0.5 after:bg-white dark:after:bg-slate-900;
+}
+
+.active{
+    @apply bg-white dark:bg-slate-900 w-[95vw] top-4 left-[2vw] rounded-lg text-center text-sky-400 font-semibold py-2 px-10 shadow-md;
+}
+
+.active .nav-list{
+    @apply after:bg-sky-400!;
+}
+
+.active .btn{
+    @apply bg-sky-400 text-white dark:text-slate-900;
+}
+
+.active .btn-dark{
+    @apply border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-white dark:hover:text-slate-900;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoloDev</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <!-- Link CSS & Library -->
+    <link rel="stylesheet" href="assets/style.css"> 
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="max-w-screen overflow-x-hidden font-sans scrollbar-hide dark:bg-slate-900">
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed flex justify-between items-center w-screen top-0 left-0 text-white dark:text-slate-900 px-14 py-4 duration-200" id="navBar">
+        <a href="index.html" class="flex items-center gap-2">
+            <img class="w-11" id="logo" src="assets/img/logo-white.png" alt="Holo Dev Logo">
+            <h1 class="font-bold uppercase text-2xl">HoloDev</h1>
+        </a>
+        <ul class="flex gap-8 text-lg font-semibold">
+            <li><a class="nav-list" href="#home">Home</a></li>
+            <li><a class="nav-list" href="#about">About</a></li>
+            <li><a class="nav-list" href="#product">Product</a></li>
+            <li><a class="nav-list" href="#contact">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-4" > 
+            <div class="btn-dark border-2 border-white dark:border-slate-900 text-white dark:text-slate-900 text-xl hover:bg-white hover:dark:bg-slate-900 hover:text-sky-400 px-2.5 py-0.75 rounded-md transition duration-300 cursor-pointer" onclick="toggleDarkMode()">
+                <i class="bx bx-moon" id="darkModeBtn"></i>
+            </div>
+            <a href="login.html">
+                <div class="btn bg-white dark:bg-slate-900 text-sky-400 px-3 py-1.75 rounded-md uppercase font-semibold hover:scale-105 transition duration-300">
+                    Contact Us
+                </div>
+            </a>
+        </div>
+    </nav>
+    
+
+    <!-- HOME -->
+    <section class="bg-gradient-to-t from-blue-500 to-sky-400 dark:from-blue-600 dark:to-sky-500 h-screen" id="home">
+
+    </section>
+    <!-- ABOUT -->
+    <section class="h-screen" id="about">
+
+    </section>
+</body>
+<script src="assets/script.js"></script>
+</html>
