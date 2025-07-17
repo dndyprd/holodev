@@ -12,8 +12,10 @@ function toggleDarkMode() {
         darkModeBtn.classList.add('bx-moon');
         logoSource = "assets/img/logo-white.png";
     }
-    
-    logo.src = logoSource;
+     
+    if (!navBar.classList.contains('active')) {
+        logo.src = logoSource;
+    }
     document.documentElement.classList.toggle('dark');
 } 
 
@@ -29,4 +31,20 @@ window.addEventListener("scroll", function () {
     navBar.classList.remove("active");
     logo.src = logoSource;
   }
+});
+
+// TYPED JS
+var typedHome = new Typed("#typedHome", {
+  strings: [
+    "From Zero to Game Developer",
+    "Code Your Dreams into Playable Reality ",
+    "Your Game Idea Starts Here ",
+    "Design Worlds, Craft Stories, Build Games ",
+    "From Player to Creator",
+    "Start Your Dev Journey! "
+  ],
+  typeSpeed: 50,
+  backSpeed: 10,
+  fadeOut: false,
+  loop: true,
 });

@@ -7,50 +7,113 @@
     <title>HoloDev</title>
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <!-- Link CSS & Library -->
-    <link rel="stylesheet" href="assets/style.css"> 
-    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'> 
 </head>
 
 <body class="max-w-screen overflow-x-hidden font-sans scrollbar-hide dark:bg-slate-900">
     <!-- NAVIGATION BAR -->
-    <nav class="fixed flex justify-between items-center w-screen top-0 left-0 text-white dark:text-slate-900 px-14 py-4 duration-200" id="navBar">
+    <nav class="fixed flex justify-between items-center w-screen top-0 left-0 text-white dark:text-slate-900 px-14 py-4 duration-200 z-50"
+        id="navBar">
         <a href="index.html" class="flex items-center gap-2">
             <img class="w-11" id="logo" src="assets/img/logo-white.png" alt="Holo Dev Logo">
             <h1 class="font-bold uppercase text-2xl">HoloDev</h1>
         </a>
-        <ul class="flex gap-8 text-lg font-semibold">
+        <ul class="flex gap-8 text-lg font-semibold uppercase">
             <li><a class="nav-list" href="#home">Home</a></li>
             <li><a class="nav-list" href="#about">About</a></li>
             <li><a class="nav-list" href="#product">Product</a></li>
-            <li><a class="nav-list" href="#contact">Contact</a></li>
+            <li><a class="nav-list" href="#testimonial">Testimonial</a></li>
         </ul>
-        <div class="flex items-center gap-4" > 
-            <div class="btn-dark border-2 border-white dark:border-slate-900 text-white dark:text-slate-900 text-xl hover:bg-white hover:dark:bg-slate-900 hover:text-sky-400 px-2.5 py-0.75 rounded-md transition duration-300 cursor-pointer" onclick="toggleDarkMode()">
+        <div class="flex items-center gap-4">
+            <div class="btn-dark border-2 border-white dark:border-slate-900 text-white dark:text-slate-900 text-xl hover:bg-white hover:dark:bg-slate-900 hover:text-sky-400 px-2.5 py-0.75 rounded-md transition duration-300 cursor-pointer"
+                onclick="toggleDarkMode()">
                 <i class="bx bx-moon" id="darkModeBtn"></i>
             </div>
-            <a href="login.html">
-                <div class="btn bg-white dark:bg-slate-900 text-sky-400 px-3 py-1.75 rounded-md uppercase font-semibold hover:scale-105 transition duration-300">
+            <a href="#contact">
+                <div
+                    class="btn bg-white dark:bg-slate-900 text-sky-400 px-3 py-1.75 rounded-md uppercase font-semibold hover:scale-105 transition duration-300">
                     Contact Us
                 </div>
             </a>
         </div>
     </nav>
-    
+
 
     <!-- HOME -->
-    <section class="bg-gradient-to-t from-blue-500 to-sky-400 dark:from-blue-600 dark:to-sky-500 h-screen" id="home">
-
+    <section
+        class="flex items-center bg-gradient-to-t from-blue-500 to-sky-500 dark:from-blue-600 dark:to-sky-500 h-[95vh] overflow-y-hidden pl-30"
+        id="home">
+        <!-- CONTENT -->
+        <div class="w-1/2 text-white dark:text-slate-900">
+            <h3 class="mt-8 mb-2 text-2xl font-medium">GAME DEV ACADEMY #1 IN INDONESIA</h3>
+            <h1 class="mb-6 text-7xl font-bold leading-20">Unlock Your Game <br>Dev Potential</h1>
+            <div class="text-2xl font-medium">
+                <span id="typedHome">Your Game Idea Starts Here</span>
+            </div>
+            <a href="#product">
+                <button type="button"
+                    class="mt-14 flex items-center gap-2 text-xl font-semibold hover:text-blue-500 border-2 border-white hover:bg-white rounded-md px-5 py-2 text-center me-2 mb-2 cursor-pointer dark:border-slate-900 dark:hover:bg-slate-900 dark:hover:text-blue-600">
+                    Learn More <i class="bx bx-search"></i>
+                </button>
+            </a>
+        </div>
+        <!-- IMAGE -->
+        <div class="w-1/2 absolute bottom-[5vh] right-0">
+            <img class="w-full" src="assets/img/home.png" alt="Home Image">
+        </div>  
     </section>
+    <!-- STATS -->
+    <div class="absolute bottom-[-5vh] left-1/2 transform -translate-x-1/2 w-[55vw]">
+        <div
+            class="flex justify-center gap-12 text-center w-full bg-white dark:bg-slate-900 text-blue-500 dark:text-sky-500 px-10 py-6 rounded-md shadow-lg">
+            <div class="">
+                <h2 class="text-3xl font-bold">1000+</h2>
+                <p class="text-lg">Students Enrolled</p>
+            </div>
+            <div class="">
+                <h2 class="text-3xl font-bold">10+</h2>
+                <p class="text-lg">Courses Available</p>
+            </div>
+            <div class="">
+                <h2 class="text-3xl font-bold">10+</h2>
+                <p class="text-lg">Expert Instructors</p>
+            </div>
+            <div class="">
+                <h2 class="text-3xl font-bold">25+</h2>
+                <p class="text-lg">Places in Indonesia</p>
+            </div>
+        </div>
+    </div>
     <!-- ABOUT -->
     <section class="h-screen" id="about">
 
     </section>
 
-    <footer>
-        <div class="bg-gradient-to-b from-blue-500 to-sky-400 dark:from-blue-600 dark:to-sky-500 text-white py-3 container mx-auto text-center text-sm">
-            <p>© 2025 HoloDev. All rights reserved.</p>
-        </div>
+    <!-- FAQ -->
+    <section class="h-screen" id="faq">
+
+    </section>
+
+    <!-- PRODUCT -->
+    <section class="h-screen" id="product">
+
+    </section>
+
+    <!--TESTIMONIAL -->
+    <section class="h-screen" id="testimonial">
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="h-screen" id="contact">
+
+    </section>
+    <footer class="bg-blue-500 text-white py-3 text-center text-lg">
+        <p>HoloDev <i class="bx bx-copyright"></i> 2025. All rights reserved.</p>
     </footer>
 </body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="assets/script.js"></script>
+
 </html>

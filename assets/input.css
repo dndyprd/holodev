@@ -6,17 +6,17 @@
 }
 
 .active{
-    @apply bg-white dark:bg-slate-900 w-[95vw] top-4 left-[2vw] rounded-lg text-center text-sky-400 font-semibold py-2 px-10 shadow-md;
+    @apply bg-white dark:bg-slate-900 w-[95vw] top-4 left-[2vw] rounded-lg text-center text-blue-500 font-semibold py-2 px-10 shadow-md;
 }
 
 .active .nav-list{
-    @apply after:bg-sky-400!;
+    @apply after:bg-blue-500!;
 }
 
 .active .btn{
-    @apply bg-sky-400 text-white dark:text-slate-900;
+    @apply bg-blue-500 text-white dark:text-slate-900;
 }
 
 .active .btn-dark{
-    @apply border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-white dark:hover:text-slate-900;
+    @apply border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white dark:hover:text-slate-900;
 }
