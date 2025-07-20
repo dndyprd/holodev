@@ -1,15 +1,416 @@
-about.html 
--- INFO PERUSAHAAN
--- OUR TEAM
--- VISI & MISI
--- LOKASI & FOTO KANTOR
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoloDev | About</title>
+    <link rel="shortcut icon" href="assets/img/logo/logo.png" type="image/x-icon">
+    <!-- Link CSS & Library -->
+    <link href="assets/style.css" rel="stylesheet">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css" rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+</head>
 
-index.html
--- HERO 
--- ABOUT simple
--- WHY CHOOSE US
--- STATS
--- TESTIMONIALS
--- FAQ
--- CONTACT US
+<body class="font-poppins bg-slate-50 dark:bg-slate-950">
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed flex justify-between items-center w-screen top-0 left-0 text-white dark:text-slate-900 px-14 py-4 duration-200 z-50"
+        id="navBar">
+        <!-- NAVBAR LOGO -->
+        <a href="index.html" class="flex items-center gap-2">
+            <img class="w-11" id="logoNavbar" src="assets/img/logo/logo-white.png" alt="HoloDev Logo">
+            <h1 class="font-russo uppercase text-2xl">HoloDev</h1>
+        </a>
+        <!-- NAVBAR LIST -->
+        <ul class="flex gap-8 text-lg font-semibold uppercase">
+            <li><a class="nav-list" href="index.html">Home</a></li>
+            <li><a class="nav-list" href="#about">About Us</a></li>
+            <li class="relative">
+                <a class="nav-list flex items-center gap-1 cursor-pointer" onclick="dropDown()">Product <i
+                        class="bx bx-chevron-down text-2xl"></i></a>
+                <!-- DROPDOWN PRODUCT -->
+                <div id="dropdownProduct" class="hidden dropdown duration-300">
+                    <ul class="py-2 text-lg text-blue-500">
+                        <li>
+                            <a href="product/junior.html" class="product-list">Junior Package</a>
+                        </li>
+                        <li class="my-2">
+                            <a href="product/beginer.html" class="product-list">Beginner Package</a>
+                        </li>
+                        <li>
+                            <a href="product/intermediate.html" class="product-list">Intermediate Package</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="product/profesional.html" class="product-list">Profesional Package</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a class="nav-list" href="index.html#testimonial">Testimonial</a></li>
+        </ul>
+        <!-- BUTTON -->
+        <div class="flex items-center gap-4">
+            <div class="btn-dark px-2.5 pt-1 pb-0.75 border-2 border-white dark:border-slate-900 text-white dark:text-slate-900 text-xl hover:bg-white hover:dark:bg-slate-900 hover:text-sky-400 rounded-md transition duration-300 cursor-pointer"
+                onclick="toggleDarkMode()">
+                <i class="bx bx-moon" id="darkModeBtn"></i>
+            </div>
+            <a href="#contact">
+                <div
+                    class="btn bg-white dark:bg-slate-900 text-sky-400 px-3 py-1.75 rounded-md uppercase font-semibold transition duration-300">
+                    Contact Us
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section
+        class="flex items-center px-30 pt-10 bg-gradient-to-t from-blue-500 to-sky-500 dark:from-blue-600 dark:to-sky-500">
+        <img src="assets/img/about.png" alt="About HoloDev Image" class="w-2/5 mx-auto">
+        <h1 class="text-6xl w-3/5 pl-14 font-russo text-white leading-18">HoloDev - <span class="bg-blue-600">
+                Empowering Creativity</span>, Leveling Up Futures</h1>
+    </section>
+
+    <!-- ABOUT SECTION  -->
+    <section class="flex flex-col justify-center items-center overflow-y-hidden px-32 pt-30 text-lg" id="about">
+        <div class="relative mb-12">
+            <h1 class="text-6xl font-bold text-blue-500 font-russo">About Holodev</h1>
+            <h5 class="absolute top-8 left-18 font-cursive text-4xl font-bold text-slate-900 dark:text-slate-200">
+                Holodev Academy</h5>
+        </div>
+        <div class="text-justify flex flex-col gap-4 dark:text-white">
+            <p class="indent-12">HoloDev adalah perusahaan yang bergerak di bidang pengembangan game sekaligus platform
+                edukasi yang fokus pada dunia game development. Didirikan oleh tim yang berpengalaman di industri
+                kreatif dan teknologi, HoloDev hadir untuk menjawab kebutuhan akan game berkualitas dan pendidikan yang
+                relevan di era digital saat ini. Kami percaya bahwa game bukan sekadar hiburan, tetapi juga sarana
+                eksplorasi, ekspresi, dan edukasi yang kuat. Di HoloDev, kami tidak hanya menciptakan game—kami
+                membangun pengalaman. Game-game yang kami kembangkan menggabungkan elemen cerita yang kuat, gameplay
+                yang menarik, dan visual yang memikat. Kami selalu mengikuti perkembangan teknologi dan tren industri
+                untuk memastikan setiap produk yang kami hasilkan memiliki nilai artistik dan teknis yang tinggi, baik
+                untuk pasar lokal maupun internasional.</p>
+            <div class="mt-2 mb-4 p-3 bg-white rounded-lg shadow-lg">
+                <img src="assets/img/company/presentation.jpg" alt="gambar peserta HOLODEV" class="rounded-lg">
+            </div>
+            <p class="indent-12">Selain itu, HoloDev juga menawarkan berbagai program pembelajaran seputar dunia game.
+                Mulai dari kelas dasar untuk pemula, pelatihan intensif seperti bootcamp, hingga mentoring proyek nyata
+                bagi peserta yang ingin menyiapkan portofolio profesional. Semua kelas dirancang agar mudah diikuti,
+                berbasis praktik langsung, dan dibimbing oleh mentor yang kompeten di bidangnya. Dengan begitu, siapa
+                pun—baik yang baru mulai maupun yang ingin meningkatkan skill—bisa belajar dengan nyaman dan efektif.
+                HoloDev hadir bukan hanya sebagai studio pengembang, tetapi juga sebagai tempat tumbuhnya komunitas
+                kreator game Indonesia. Kami mendorong kolaborasi, inovasi, dan semangat saling mendukung di antara para
+                pembelajar, pengembang, dan pelaku industri. Melalui pendekatan yang menyeluruh ini, HoloDev berkomitmen
+                membangun ekosistem game lokal yang sehat, inklusif, dan siap bersaing di kancah global.</p>
+        </div>
+    </section>
+
+    <!-- VISI DAN MISI  -->
+    <section class="flex flex-col justify-center items-center overflow-y-h pyidden px-30 pt-36 text-lg gap-10">
+        <div class="flex items-center flex-col pb-15">
+            <h1 class="relative text-5xl font-bold text-blue-500 font-russo">VISION & MISSION
+                <span
+                    class="absolute top-6 left-20 font-cursive text-4xl text-slate-900 dark:text-slate-200 whitespace-nowrap">Vision
+                    & Mission</span>
+            </h1>
+        </div>
+        <div class="flex justify-center items-center gap-16 w-full text-slate-50 text-justify font-russo">
+            <!-- VISI -->
+            <div class="bg-white px-8 py-8 rounded-lg shadow-xl w-1/2 relative">
+                <h2 class="text-4xl absolute -top-6 left-1/2 -translate-x-1/2 bg-blue-500 px-4 py-1 rounded-sm">Vision
+                </h2>
+                <p class="text-gray-700 font-poppins py-2">"Becoming a pioneer in the gaming industry and game
+                    development education in Indonesia, creating innovations that can inspire a new generation of
+                    creators."</p>
+            </div>
+
+            <!-- MISI -->
+            <div class="bg-white px-7 py-8 rounded-lg shadow-xl w-1/2 relative">
+                <h2 class="text-4xl absolute -top-6 left-1/2 -translate-x-1/2 bg-blue-500 px-4 py-1 rounded-sm">Mission
+                </h2>
+                <ul class="list-disc pl-5 text-gray-700 font-poppins">
+                    <li>Developing high-quality games that are both entertaining and educational.</li>
+                    <li>Providing an inclusive and accessible learning platform for all groups.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TEAM SECTION  -->
+    <section class="flex flex-col justify-center items-center overflow-y-hidden px-30 pt-44 gap-15">
+        <div class="flex items-center flex-col">
+            <h1 class="relative text-5xl font-bold text-blue-500 font-russo">OUR TEAM
+                <span
+                    class="absolute top-6 left-0 font-cursive text-4xl text-slate-900 dark:text-slate-200 whitespace-nowrap">
+                    Meet Our Team</span>
+            </h1>
+        </div>
+
+        <!-- TEAM SLIDESHOW -->
+        <div class="relative w-full">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- TEAM BOX 1 -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/team/billgates.png" alt="Team Member 1" class="w-full rounded-lg mb-4">
+                        <div class="px-2">
+                            <div class="pb-4">
+                                <h2 class="text-3xl text-blue-500 font-russo">Bill Gates</h2>
+                                <p class="text-gray-900 text-xl font-semibold">PROJECT MANAGER</p>
+                                <p class="text-lg mt-1">"Create game with new inovations"</p>
+                            </div>
+                            <div class="flex justify-end mt-2 gap-2 text-3xl">
+                                <a href="#">
+                                    <i class='bxl bx-instagram'></i>
+                                </a>
+                                <a href="#">
+                                    <i class='bxl bx-github'></i>
+                                </a>
+                                <a href="#">
+                                    <i class='bxl bx-linkedin-square'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TEAM BOX 2 -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/team/dandy.png" alt="Team Member 2" class="w-full rounded-lg mb-4">
+                        <div class="px-2">
+                            <div class="pb-4">
+                                <h2 class="text-3xl text-blue-500 font-russo">Dandy Pradnyana</h2>
+                                <p class="text-gray-900 text-xl font-semibold">3D MODELER & ANIMATOR</p>
+                                <p class="text-lg mt-1">"I can make your 2D waifu into 3D"</p>
+                            </div>
+                            <div class="flex justify-end mt-2 gap-2 text-3xl">
+                                <a href="#">
+                                    <i class='bxl bx-instagram'></i>
+                                </a>
+                                <a href="#">
+                                    <i class='bxl bx-github'></i>
+                                </a>
+                                <a href="#">
+                                    <i class='bxl bx-linkedin-square'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TEAM BOX 3 -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/team/satria.png" alt="Team Member 3" class="w-full rounded-lg mb-4">
+                        <div class="px-2">
+                            <div class="pb-4">
+                                <h2 class="text-3xl text-blue-500 font-russo">Satria Ramadhani</h2>
+                                <p class="text-gray-900 text-xl font-semibold">VFX ARTIST & SOUND DESIGNER</p>
+                                <p class="text-lg mt-1">"Be yourself and never surender"</p>
+                            </div>
+                            <div class="flex justify-end mt-2 gap-2 text-3xl">
+                                <a href="#">
+                                    <i class='bxl bx-instagram'></i>
+                                </a>
+                                <a href="#">
+                                    <i class='bxl bx-github'></i>
+                                </a>
+                                <a href="#">
+                                    <i class='bxl bx-linkedin-square'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TEAM BOX 4 -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/team/sandika.png" alt="Team Member 4" class="w-full rounded-lg mb-4">
+                        <div class="px-2">
+                            <div class="pb-4">
+                                <h2 class="text-3xl text-blue-500 font-russo">Sandika Galih</h2>
+                                <p class="text-gray-900 text-xl font-semibold">GAME PROGRAMMER</p>
+                                <p class="text-lg mt-1">"Don't forget the semicolon"</p>
+                            </div>
+                            <div class="flex justify-end mt-2 gap-2 text-3xl">
+                                <a href="#">
+                                    <i class='bxl bx-instagram'></i>
+                                </a>
+                                <a href="#">
+                                    <i class='bxl bx-github'></i>
+                                </a>
+                                <a href="#">
+                                    <i class='bxl bx-linkedin-square'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TEAM BOX 5 -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/team/mark.png" alt="Team Member 5" class="w-full rounded-lg mb-4">
+                        <div class="px-2">
+                            <div class="pb-4">
+                                <h2 class="text-3xl text-blue-500 font-russo">Mark Zuckerberg</h2>
+                                <p class="text-gray-900 text-xl font-semibold">SYSTEM DESIGN & QA TESTER</p>
+                                <p class="text-lg mt-1">"If life could be tested too"</p>
+                            </div>
+                            <div class="flex justify-end mt-2 gap-2 text-3xl">
+                                <a href="#">
+                                    <i class='bxl bx-instagram'></i>
+                                </a>
+                                <a href="#">
+                                    <i class='bxl bx-github'></i>
+                                </a>
+                                <a href="#">
+                                    <i class='bxl bx-linkedin-square'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- LOKASI & FOTO KANTOR  -->
+    <section class="flex flex-col justify-center items-center overflow-y-hidden px-24 pt-28 pb-52">
+        <div class="flex items-center flex-col mb-12">
+            <h1 class="relative text-5xl font-bold text-blue-500 font-russo">COMPANY LOCATION
+                <span class="absolute top-5 left-32 font-cursive text-4xl text-slate-900 dark:text-slate-200">Our
+                    Location</span>
+            </h1>
+        </div>
+        <div class="flex justify-center items-center gap-20">
+            <div class="flex flex-col items-center w-full text-lg text-slate-900 dark:text-slate-100 whitespace-nowrap">
+                <div>
+                    <h5 class="font-russo text-4xl text-blue-500">25+</h5>
+                    <p>City in Indonesia</p>
+                </div>
+                <div class="my-8">
+                    <h5 class="font-russo text-4xl text-blue-500">10.000+</h5>
+                    <p>City in Indonesia</p>
+                </div>
+                <div>
+                    <h5 class="font-russo text-4xl text-blue-500">4+</h5>
+                    <p>Course Package</p>
+                </div>
+            </div>
+            <img src="assets/img/company/map.png" alt="lokasi kantor" class="w-full">
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="bg-gradient-to-t from-blue-700 to-blue-500 relative" id="contact">
+        <!-- SUBCSRIBE BOX -->
+        <div
+            class="flex gap-20 items-center absolute left-1/2 -translate-x-1/2 -top-32 w-[85vw] bg-white rounded-xl px-6 py-10 dark:bg-slate-900 shadow-md">
+            <!-- SUBSCRIBE CONTENT -->
+            <div class="pl-18">
+                <h1 class="font-russo text-blue-500 text-5xl">Subscribe and get <br>information from email!</h1>
+                <p class="text-lg mt-2 mb-6 text-slate-900 dark:text-slate-100">Get more information about promo
+                    vocuhers and the latest class update</p>
+                <form action="#" class="flex items-center gap-4">
+                    <input type="email" placeholder="Input your email"
+                        class="w-full p-2 rounded-md border-3 text-slate-900 dark:text-slate-100 border-slate-100 dark:border-slate-600 bg-white dark:bg-slate-600 outline-0 shadow-md"
+                        required>
+                    <button
+                        class="bg-blue-500 text-white dark:text-slate-900 px-3 py-3 text-xl rounded-md flex items-center justify-center"
+                        type="submit"><i class="bx bxs-send-alt"></i></button>
+                </form>
+            </div>
+            <div class="w-2/6 absolute right-16 bottom-0">
+                <img class="w-full" src="assets/img/contact.png" alt="Contact Image">
+            </div>
+        </div>
+        <div class="flex px-28 pt-64 pb-30 text-slate-100 dark:text-slate-900">
+            <!-- CONTACT INFO -->
+            <div class="w-2/5 mr-12">
+                <div class="flex items-center gap-4">
+                    <img src="assets/img/logo/logo-white.png" id="logoContact" class="w-10" alt="Logo Holodev">
+                    <h1 class="text-3xl font-russo">HoloDev Academy</h1>
+                </div>
+                <p class="text-justify text-lg mt-4 mb-8">Game Developer Academy #1 in Indonesia. Improve your game
+                    developer skill with us, learn to develop
+                    and create new inovations in the game worlds. </p>
+                <!-- SOCIAL MEDIA -->
+                <ul class="flex items-center text-4xl gap-6">
+                    <li><a href="https://www.instagram.com/holodev.id/" target="_blank" class="hover:text-blue-100"><i
+                                class="bxl bx-instagram"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/holodev.id/" target="_blank" class="hover:text-blue-100"><i
+                                class="bxl bx-twitter-x"></i></a>
+                    </li>
+                    <li><a href="https://www.tiktok.com/@holodev.id/" target="_blank" class="hover:text-blue-100"><i
+                                class="bxl bx-tiktok"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/holodev.id/" target="_blank" class="hover:text-blue-100"><i
+                                class="bxl bx-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.linked.in/holodev.id/" target="_blank" class="hover:text-blue-100"><i
+                                class="bxl bx-linkedin-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- NAVIGATION -->
+            <div class="w-1/5">
+                <h3 class="text-3xl font-russo mb-4">Navigation</h3>
+                <ul class="text-lg flex flex-col gap-1">
+                    <li>
+                        <a href="#home" class="hover:text-blue-100">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="hover:text-blue-100">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#whyus" class="hover:text-blue-100">Why Us</a>
+                    </li>
+                    <li>
+                        <a href="#faq" class="hover:text-blue-100">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#testimonial" class="hover:text-blue-100">Testimonial</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- PRODUCT LIST -->
+            <div class="w-1/5">
+                <h3 class="text-3xl font-russo mb-4">Product</h3>
+                <ul class="text-lg flex flex-col gap-1">
+                    <li>
+                        <a href="product/junior.html" class="hover:text-blue-100">Junior Package</a>
+                    </li>
+                    <li>
+                        <a href="product/beginer.html" class="hover:text-blue-100">Beginner Package</a>
+                    </li>
+                    <li>
+                        <a href="product/intermediate.html" class="hover:text-blue-100">Intermediate Package</a>
+                    </li>
+                    <li>
+                        <a href="product/profesional.html" class="hover:text-blue-100">Profesional Package</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- CONTACT US -->
+            <div class="w-1/5">
+                <h3 class="text-3xl font-russo mb-4">Contact Us</h3>
+                <ul class="text-lg flex flex-col gap-1">
+                    <li class="flex items-center gap-2 hover:text-blue-100">
+                        <i class="bxl bx-whatsapp"></i> +62 812-3456-7890
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-blue-100">
+                        <i class="bx bx-envelope"></i> support@holodev.id
+                    </li>
+                    <li class="flex items-center gap-2 hover:text-blue-100">
+                        <i class="bx bxs-location"></i> Bali, Indonesia
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <footer class="text-slate-100 dark:text-slate-900 pb-6 text-center text-lg">
+            <p>Created by HoloDev <i class="bx bx-copyright"></i> 2025. All rights reserved.</p>
+        </footer>
+    </section>
+</body>
+<!-- SCRIPT JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="assets/script.js"></script>
+
+</html>

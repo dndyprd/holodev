@@ -1,22 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap');
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-.nav-list{
-    @apply after:duration-100 after:content-[''] after:block after:mt-0.5 after:w-0 hover:after:w-full after:h-0.5 after:bg-white dark:after:bg-slate-900;
+@theme {
+  --font-archivo: "Archivo Black", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-cursive: "Nothing You Could Do", cursive;
+  --font-russo: "Russo One", sans-serif;
 }
 
-.active{
-    @apply bg-white dark:bg-slate-900 w-[95vw] top-4 left-[2vw] rounded-lg text-center text-blue-500 font-semibold py-2 px-10 shadow-md;
+.nav-list {
+  @apply after:duration-100 after:content-[''] after:block after:mt-0.5 after:w-0 hover:after:w-full after:h-0.5 after:bg-white dark:after:bg-slate-900;
 }
 
-.active .nav-list{
-    @apply after:bg-blue-500!;
+/* ACTIVE CLASS */
+.active {
+  @apply bg-white dark:bg-slate-900 w-[95vw] top-4 left-[2vw] rounded-lg text-blue-500 font-semibold py-2 px-10 shadow-md;
 }
 
-.active .btn{
-    @apply bg-blue-500 text-white dark:text-slate-900;
+.active .nav-list {
+  @apply after:bg-blue-500!;
 }
 
-.active .btn-dark{
-    @apply border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white dark:hover:text-slate-900;
+.active .btn {
+  @apply bg-blue-500 text-white dark:text-slate-900 hover:bg-blue-600;
+}
+
+.active .btn-dark {
+  @apply border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white dark:hover:text-slate-900;
+}
+
+/* DROPDOWN */
+.dropdown{
+    @apply z-10 absolute top-11 -left-4 px-3 bg-white rounded-md shadow-md dark:bg-slate-900 whitespace-nowrap;
+}
+
+.product-list{
+    @apply block px-4 py-2 hover:bg-gray-100 dark:hover:bg-slate-950;
+}
+
+.active .dropdown{
+    @apply top-13;
+}
+
+/* SWIPER SLIDE */
+.swiper-slide{
+    @apply bg-white rounded-lg shadow-md p-3 mb-4 transition duration-200 hover:rotate-1;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+  @apply !z-40 !absolute !top-1/2 !-translate-y-1/2 !w-10 !h-10 !text-blue-500 !bg-white hover:!scale-110 duration-300 !rounded-full !shadow-md after:!text-sm after:!font-bold;
+}
+
+.swiper-button-prev {
+  @apply !-left-7;
+}
+
+.swiper-button-next {
+  @apply !-right-7;
+}
+
+.swiper-pagination {
+  @apply !relative !mt-8;
+}
+
+.swiper-pagination-bullet {
+  @apply !bg-gray-300 !opacity-100;
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-blue-500;
 }
