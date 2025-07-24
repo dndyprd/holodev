@@ -44,10 +44,6 @@
 }
 
 /* SWIPER SLIDE */
-.swiper-slide{
-    @apply bg-white rounded-lg shadow-md p-3 mb-4 transition duration-200 hover:rotate-1;
-}
-
 .swiper-button-next, 
 .swiper-button-prev {
   @apply !z-40 !absolute !top-1/2 !-translate-y-1/2 !w-10 !h-10 !text-blue-500 !bg-white hover:!scale-110 duration-300 !rounded-full !shadow-md after:!text-sm after:!font-bold;
@@ -71,4 +67,54 @@
 
 .swiper-pagination-bullet-active {
   @apply !bg-blue-500;
+}
+ 
+.swiper-slide{
+  @apply bg-white rounded-lg shadow-md p-3 mb-4 transition;
+}
+
+.team .swiper-slide{
+  @apply hover:scale-105;
+}
+
+.testi .swiper-slide{
+  @apply scale-90 opacity-60;
+}
+
+.testi .swiper-slide-next{
+  @apply scale-110 z-20 opacity-100;
+}
+
+/* ACCORDION */ 
+.accordion{
+  @apply bg-slate-100 rounded-md shadow-md text-lg cursor-pointer dark:bg-slate-900 text-slate-900 dark:text-slate-100;
+}
+
+.accordion-header{
+  @apply px-8 py-3 flex items-center justify-between;
+}
+
+.accordion-content{
+  @apply px-10 overflow-hidden;
+}
+
+/* PRODUCT */
+.circle {
+  @apply w-14 h-14 bg-white rounded-full flex justify-center items-center font-bold text-blue-500 text-2xl border-4 border-blue-500 z-1;
+}
+
+.line {
+  @apply after:w-1 after:h-28 after:bg-blue-500 after:absolute after:top-12 after:-translate-x-1/2 after:left-1/2;
+}
+
+.bg-product {
+  @apply flex items-center bg-gradient-to-t from-blue-500 to-sky-500 dark:from-blue-600 dark:to-sky-500 h-[95vh] overflow-y-hidden px-30;
+}
+
+.product-btn {
+  @apply w-3/12 mt-10 flex justify-center items-center duration-300 text-xl font-semibold hover:text-blue-500 border-2 border-white hover:bg-white rounded-md px-5 py-2 cursor-pointer dark:border-slate-900 dark:hover:bg-slate-900 dark:hover:text-blue-600;
+}
+
+.learn-flow {
+  @apply flex flex-col gap-12 w-1/2;
 }

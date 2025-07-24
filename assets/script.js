@@ -1,5 +1,6 @@
+AOS.init();
 
-// SWIPER 
+// TEAM SLIDESHOW 
 document.addEventListener('DOMContentLoaded', () => {
   new Swiper('.swiper', {
     slidesPerView: 3,
@@ -71,11 +72,14 @@ window.addEventListener("scroll", function () {
 // DROPDOWN 
 function dropDown(){
   const dropDown = document.getElementById("dropdownProduct");
+  const chevron = document.getElementById("productChevron");
 
   if (dropDown.classList.contains("hidden")) {
     dropDown.classList.remove("hidden");
+    chevron.classList.add("rotate-180");
   } else {
     dropDown.classList.add("hidden");
+    chevron.classList.remove("rotate-180");
   }
 }
 
@@ -115,4 +119,31 @@ document.querySelectorAll('.count').forEach(function(el) {
 
   el.textContent = '0';
   requestAnimationFrame(updateCount);
+});
+
+// ACORDION
+const accordions = document.querySelectorAll(".accordion");
+
+accordions.forEach(acc => { 
+  const items = acc.querySelector('.accordion-header');
+  const content = acc.querySelector('.accordion-content');
+  const arrow = acc.querySelector('.arrow');
+
+  items.addEventListener('click', () => { 
+    accordions.forEach(otherAcc => {
+      // Deklarasi accrodion selain yang di klik
+      const otherContent = otherAcc.querySelector('.accordion-content');
+      const otherArrow = otherAcc.querySelector('.arrow');  
+
+      if (otherAcc !== acc) {
+        otherContent.classList.remove('h-full');
+        otherContent.classList.add('h-0'); 
+        otherArrow.classList.remove('rotate-180');
+      }
+    }); 
+    
+    content.classList.toggle('h-full');
+    content.classList.toggle('h-0');
+    arrow.classList.toggle('rotate-180');
+  });
 });

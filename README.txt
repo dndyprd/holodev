@@ -12,12 +12,14 @@ CUSTOM CLASS TAILWIND
 -- Setting navbar active ketika di scroll
 .active .btn & .active .btn-dark
 -- Trigger button ketika navbar active
-.swiper-slide
--- Custom style for swiperjs 
+.swipper-slide
+-- Custom style for items box
 .dropdown
 -- Styling dropdown
 .product-list
 -- Setting list dropdown product
+.accordion, .accordion-header & .accordion-content
+-- Custom class untuk style accordion
 
 SLIDER FROM SWIPERJS CDN
 - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">

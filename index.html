@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/style.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="max-w-screen overflow-x-hidden scrollbar-hide bg-slate-50 dark:bg-slate-950 font-poppins">
@@ -17,17 +19,18 @@
     <nav class="fixed flex justify-between items-center w-screen top-0 left-0 text-white dark:text-slate-900 px-14 py-4 duration-200 z-50"
         id="navBar">
         <!-- NAVBAR LOGO -->
-        <a href="index.html" class="flex items-center gap-2">
+        <a href="index.html" class="flex items-center gap-2" data-aos="fade-down">
             <img class="w-11" id="logoNavbar" src="assets/img/logo/logo-white.png" alt="HoloDev Logo">
             <h1 class="font-russo uppercase text-2xl">HoloDev</h1>
         </a>
         <!-- NAVBAR LIST -->
         <ul class="flex gap-8 text-lg font-semibold uppercase">
-            <li><a class="nav-list" href="#home">Home</a></li>
-            <li><a class="nav-list" href="#about">About Us</a></li>
-            <li class="relative">
-                <a class="nav-list flex items-center gap-1 cursor-pointer" onclick="dropDown()">Product <i
-                        class="bx bx-chevron-down text-2xl"></i></a>
+            <li data-aos="fade-down"><a class="nav-list" href="#home">Home</a></li>
+            <li data-aos="fade-down" data-aos-delay="150"><a class="nav-list" href="#about">About Us</a></li>
+            <li data-aos="fade-down" data-aos-delay="300" class="relative">
+                <a class="nav-list flex items-center gap-1 cursor-pointer" onclick="dropDown()">Product
+                    <i class="bx bx-chevron-down text-2xl" id="productChevron"></i>
+                </a>
                 <!-- DROPDOWN PRODUCT -->
                 <div id="dropdownProduct" class="hidden dropdown duration-300">
                     <ul class="py-2 text-lg text-blue-500">
@@ -46,15 +49,15 @@
                     </ul>
                 </div>
             </li>
-            <li><a class="nav-list" href="#testimonial">Testimonial</a></li>
+            <li data-aos="fade-down" data-aos-delay="450"><a class="nav-list" href="#testimonial">Testimonial</a></li>
         </ul>
         <!-- BUTTON -->
         <div class="flex items-center gap-4">
             <div class="btn-dark px-2.5 pt-1 pb-0.75 border-2 border-white dark:border-slate-900 text-white dark:text-slate-900 text-xl hover:bg-white hover:dark:bg-slate-900 hover:text-sky-400 rounded-md transition duration-300 cursor-pointer"
-                onclick="toggleDarkMode()">
+                onclick="toggleDarkMode()" data-aos="fade-down" data-aos-delay="150">
                 <i class="bx bx-moon" id="darkModeBtn"></i>
             </div>
-            <a href="#contact">
+            <a href="#contact" data-aos="fade-down" data-aos-delay="300">
                 <div
                     class="btn bg-white dark:bg-slate-900 text-sky-400 px-3 py-1.75 rounded-md uppercase font-semibold transition duration-300">
                     Contact Us
@@ -136,8 +139,7 @@
                     <i class='bx bx-medal-star-alt text-4xl'></i>
                     <div>
                         <h5 class="font-bold">No. 1 Game Dev Academy in Indonesia</h5>
-                        <p class="text-md">Recognized by the Indonesian Ministry of Education for producing top-tier
-                            industry-ready graduates.</p>
+                        <p class="text-md">Recognized by the Ministry of Education, producing excellent graduates.</p>
                     </div>
                 </li>
                 <li class="flex items-center gap-2 my-3">
@@ -173,43 +175,371 @@
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="h-screen" id="faq">
-
+    <!-- WHY US -->
+    <section class="flex justify-center px-30 py-16 gap-12" id="whyus">
+        <div class="whitespace-nowrap m-auto">
+            <h1 class="mt-3 mb-6 text-5xl text-blue-500 relative font-russo whitespace-nowrap">WHY <br>CHOOSE US
+                <span
+                    class="absolute -bottom-4 font-bold left-2 font-cursive text-4xl text-slate-900 dark:text-slate-200">Our
+                    Benefits</span>
+            </h1>
+        </div>
+        <!-- CONTENT -->
+        <div class="bg-white dark:bg-slate-900 flex justify-between text-center py-8 px-10 gap-6 rounded-xl">
+            <div>
+                <h5 class="text-7xl text-blue-500 dark:text-slate-100"><i class="bx bx-education"></i></h5>
+                <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-blue-500 whitespace-nowrap">Expert Mentors
+                </h3>
+                <p class="text-slate-900 dark:text-slate-100">Learn from gaming industry veterans.</p>
+            </div>
+            <div>
+                <h5 class="text-7xl text-blue-500 dark:text-slate-100"><i class='bx bx-joystick'></i> </h5>
+                <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-blue-500 whitespace-nowrap">Based Curriculum
+                </h3>
+                <p class="text-slate-900 dark:text-slate-100">Graduate with 3+ published games.</p>
+            </div>
+            <div>
+                <h5 class="text-7xl text-blue-500 dark:text-slate-100"><i class="bx bx-briefcase-alt-2"></i></h5>
+                <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-blue-500 whitespace-nowrap">Job Focused
+                    Traine</h3>
+                <p class="text-slate-900 dark:text-slate-100">92% job placement rate with 50+ studio partners.</p>
+            </div>
+            <div>
+                <h5 class="text-7xl text-blue-500 dark:text-slate-100"><i class='bx bx-stopwatch'></i></h5>
+                <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-blue-500 whitespace-nowrap">Flexible Learning
+                </h3>
+                <p class="text-slate-900 dark:text-slate-100">Choose schedules that fit your life: online, offline, etc
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- PRODUCT -->
-    <section class="h-screen" id="product">
-
+    <section class="px-28 py-20" id="product">
+        <div class="flex mx-auto mb-16">
+            <h1 class="relative flex m-auto text-5xl font-bold text-blue-500 font-russo">PRODUCT
+                <span
+                    class="absolute top-6 -left-12 font-cursive text-4xl text-slate-900 dark:text-slate-200 whitespace-nowrap">Choose
+                    Your Package</span>
+            </h1>
+        </div>
+        <div class="flex gap-4">
+            <!-- JUNIOR PACKAGE -->
+            <div
+                class="group w-1/4 bg-white dark:bg-slate-900 shadow-md rounded-md px-4 pt-4 pb-8 hover:scale-105 duration-200">
+                <div class="w-full overflow-hidden aspect-video rounded-md mb-4">
+                    <img src="assets/img/product/junior.png" alt="Junior Pacakage Image"
+                        class="w-full group-hover:scale-105 duration-150">
+                </div>
+                <div class="px-2 pb-4">
+                    <h4 class="text-2xl text-blue-500 font-russo whitespace-nowrap">Junior Package</h4>
+                    <h5
+                        class="text-md bg-slate-900 dark:bg-blue-900 text-slate-100 px-4 py-1 my-2 rounded-md inline-block">
+                        4 - 10
+                        years old</h5>
+                    <p class="text-lg text-justify text-slate-900 dark:text-slate-100">
+                        Focuses on developing creative logic and coding fundamentals.
+                    </p>
+                    <a href="product/junior.html"
+                        class="flex items-center gap-2 float-right border-2 border-blue-500 text-lg text-blue-500 hover:bg-blue-500 hover:text-white rounded-md px-4 py-2 mt-4">See
+                        Detail <i class="bx bx-search"></i></a>
+                </div>
+            </div>
+            <!-- BEGINNER PACKAGE -->
+            <div
+                class="group w-1/4 bg-white dark:bg-slate-900 shadow-md rounded-md px-4 pt-4 pb-8 hover:scale-105 duration-200">
+                <div class="w-full overflow-hidden aspect-video rounded-md mb-4">
+                    <img src="assets/img/product/beginner.png" alt="Beginner Pacakage Image"
+                        class="w-full group-hover:scale-105 duration-150">
+                </div>
+                <div class="px-2 pb-4">
+                    <h4 class="text-2xl text-blue-500 font-russo whitespace-nowrap">Beginner Package</h4>
+                    <h5
+                        class="text-md bg-slate-900 dark:bg-blue-900 text-slate-100 px-4 py-1 my-2 rounded-md inline-block">
+                        9 - 15
+                        years old</h5>
+                    <p class="text-lg text-justify text-slate-900 dark:text-slate-100">
+                        Learn game dev with professional yet easy to understand tools.
+                    </p>
+                    <a href="product/beginner.html"
+                        class="flex items-center gap-2 float-right border-2 border-blue-500 text-lg text-blue-500 hover:bg-blue-500 hover:text-white rounded-md px-4 py-2 mt-4">See
+                        Detail <i class="bx bx-search"></i></a>
+                </div>
+            </div>
+            <!-- Intermediate Package -->
+            <div
+                class="group w-1/4 bg-white dark:bg-slate-900 shadow-md rounded-md px-4 pt-4 pb-8 hover:scale-105 duration-200">
+                <div class="w-full overflow-hidden aspect-video rounded-md mb-4">
+                    <img src="assets/img/product/intermediate.png" alt="Intermediate Pacakage Image"
+                        class="w-full group-hover:scale-105 duration-150">
+                </div>
+                <div class="px-2 pb-4">
+                    <h4 class="text-2xl text-blue-500 font-russo whitespace-nowrap">Intermediate Package</h4>
+                    <h5
+                        class="text-md bg-slate-900 dark:bg-blue-900 text-slate-100 px-4 py-1 my-2 rounded-md inline-block">
+                        16 - 19
+                        years old
+                    </h5>
+                    <p class="text-lg text-justify text-slate-900 dark:text-slate-100">
+                        Improve game dev skills with more professional engines and build a portfolio.
+                    </p>
+                    <a href="product/intermediate.html"
+                        class="flex items-center gap-2 float-right border-2 border-blue-500 text-lg text-blue-500 hover:bg-blue-500 hover:text-white rounded-md px-4 py-2 mt-4">See
+                        Detail <i class="bx bx-search"></i></a>
+                </div>
+            </div>
+            <!-- Profesional Package -->
+            <div
+                class="group w-1/4 bg-white dark:bg-slate-900 shadow-md rounded-md px-4 pt-4 pb-8 hover:scale-105 duration-200">
+                <div class="w-full overflow-hidden aspect-video rounded-md mb-4">
+                    <img src="assets/img/product/profesional.png" alt="Profesional Pacakage Image"
+                        class="w-full group-hover:scale-105 duration-150">
+                </div>
+                <div class="px-2 pb-4">
+                    <h4 class="text-2xl text-blue-500 font-russo whitespace-nowrap">Profesional Package</h4>
+                    <h5
+                        class="text-md bg-slate-900 dark:bg-blue-900 text-slate-100 px-4 py-1 my-2 rounded-md inline-block">
+                        20 years
+                        old +
+                    </h5>
+                    <p class="text-lg text-justify text-slate-900 dark:text-slate-100">
+                        Learn more complex 3D game development, game marketing strategies.
+                    </p>
+                    <a href="product/profesional.html"
+                        class="flex items-center gap-2 float-right border-2 border-blue-500 text-lg text-blue-500 hover:bg-blue-500 hover:text-white rounded-md px-4 py-2 mt-4">See
+                        Detail <i class="bx bx-search"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- FAQ -->
+    <section class="px-28 py-20 flex items-center gap-18" id="faq">
+        <div class="w-2/5 text-lg">
+            <!-- Title -->
+            <h3 class="relative text-5xl font-medium text-blue-500 font-russo">Frequently Asked Question
+                <span
+                    class="absolute top-8 left-12 font-cursive font-bold text-4xl text-slate-900 dark:text-slate-200 whitespace-nowrap">
+                    FAQ</span>
+            </h3>
+            <!-- Information & Button -->
+            <p class="mt-6 text-justify text-slate-900 dark:text-slate-100">Some questions that prospective students
+                often ask us regarding the
+                game dev courses that we offer. Still have questions? Chat our team!</p>
+            <a href="https://wa.me/081234567890" class="inline-block mt-8">
+                <div
+                    class="flex items-center gap-2 px-4 py-2 rounded-md border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-slate-100 dark:hover:text-slate-900">
+                    <i class="bxl bx-whatsapp text-2xl"></i> Contact Us
+                </div>
+            </a>
+        </div>
+        <div class="w-3/5 relative flex flex-col gap-5">
+            <!-- FAQ 1 -->
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h5 class="font-semibold">There any prerequisites before registering?</h5>
+                    <i class="arrow bx bx-chevron-down text-2xl"></i>
+                </div>
+                <div class="accordion-content h-0">
+                    <p class="pt-4 pb-6">No, all our programs are designed for varying skill levels. Beginners
+                        can start from scratch without any coding background. The Advanced package for those who already
+                        know programming logic.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h5 class="font-semibold">How long are the programs?</h5>
+                    <i class="arrow bx bx-chevron-down text-2xl"></i>
+                </div>
+                <div class="accordion-content h-0">
+                    <p class="pt-4 pb-6">The learning duration varies depending on the package you choose. The Junior or
+                        Beginner package will take 3-6 months. The Intermediate/Pro package will take 6-12 months
+                        (including portfolio development).
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h5 class="font-semibold">Are courses online or offline?</h5>
+                    <i class="arrow bx bx-chevron-down text-2xl"></i>
+                </div>
+                <div class="accordion-content h-0">
+                    <p class="pt-4 pb-6">Both! You can choose either learning method. You
+                        can study offline in over 25 cities across Indonesia.
+                        However, you can also learn online through live tutoring and recorded modules.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h5 class="font-semibold">Is there access to materials after graduation?</h5>
+                    <i class="arrow bx bx-chevron-down text-2xl"></i>
+                </div>
+                <div class="accordion-content h-0">
+                    <p class="pt-4 pb-6">Yes! Lifetime access to modules, curriculum updates, and the alumni network on
+                        Discord.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h5 class="font-semibold">What PC/laptop specifications are required?</h5>
+                    <i class="arrow bx bx-chevron-down text-2xl"></i>
+                </div>
+                <div class="accordion-content h-0">
+                    <p class="pt-4 pb-6">Minimum specifications for Junior or Beginner
+                        packages require a standard PC/Laptop (4GB RAM). For pro packages require a dedicated GPU for
+                        Unreal
+                        Engine 5/Blender.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h5 class="font-semibold">Can we try a trial class before signing up?</h5>
+                    <i class="arrow bx bx-chevron-down text-2xl rotate-180"></i>
+                </div>
+                <div class="accordion-content h-full">
+                    <p class="pt-4 pb-6">Free 1-day workshop every month! Register via WhatsApp. For more
+                        information, send your email using the contact form. <a href="#contact">Click here</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!--TESTIMONIAL -->
-    <section class="h-screen" id="testimonial">
-        index.html
-        -- HERO done
-        -- ABOUT simple done
-        -- WHY CHOOSE US
-        -- STATS done
-        -- TESTIMONIALS
-        -- FAQ
-        -- CONTACT US
+    <section class="px-28 pt-20 pb-56" id="testimonial">
+        <!-- Title -->
+        <div class="flex items-center flex-col">
+            <h1 class="relative text-5xl font-bold text-blue-500 font-russo">TESTIMONIAL
+                <span
+                    class="absolute top-6 -left-4 font-cursive text-4xl text-slate-900 dark:text-slate-200 whitespace-nowrap">
+                    What Our Alumni Say</span>
+            </h1>
+            <p class="mt-10 mb-12 text-lg text-center">Hear from our students and alumni who transformed their passion
+                into careers. <br>Don't just take our word for it—see what our students say!</p>
+        </div>  
+        <!-- Testi Slideshow -->
+        <div class="relative w-full">
+            <div class="swiper testi">
+                <div class="swiper-wrapper">
+                    <!-- Testi 1 -->
+                    <div class="swiper-slide">
+                        <div class="px-4 mt-4 w-full h-22 overflow-y-auto">
+                            <p class="text-lg text-justify">"There are many interesting class options to suit our abilities, from
+                                the very beginner to the professional level."</p>
+                        </div>
+                        <div class="flex items-center px-4 pb-2 mt-4 gap-4">
+                            <img src="assets/img/testimonial/windah.png" alt="Testimonial 1"
+                                class="w-10 aspect-square rounded-full">
+                            <div class="text-lg">
+                                <h5 class="font-semibold">Windah Basudara</h5>
+                                <p class="text-slate-600">Profesionnal Class Graduate</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Testi 2 -->
+                    <div class="swiper-slide">
+                        <div class="px-4 mt-4 w-full h-22 overflow-y-auto">
+                            <p class="text-lg text-justify">"I really like studying at the holodev academy, they taught me how to
+                                use scratch to make games."</p>
+                        </div>
+                        <div class="flex items-center px-4 pb-2 mt-4 gap-4">
+                            <img src="assets/img/testimonial/reggie.png" alt="Testimonial 2"
+                                class="w-10 aspect-square rounded-full">
+                            <div class="text-lg">
+                                <h5 class="font-semibold">Reggie Prabowo</h5>
+                                <p class="text-slate-600">Intermediate Class Graduate</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testi 3 -->
+                    <div class="swiper-slide">
+                        <div class="px-4 mt-4 w-full h-22 overflow-y-auto">
+                            <p class="text-lg text-justify">"I really like studying at the holodev academy, they taught me how to
+                                use scratch to make games."</p>
+                        </div>
+                        <div class="flex items-center px-4 pb-2 mt-4 gap-4">
+                            <img src="assets/img/testimonial/dika.png" alt="Testimonial 3"
+                                class="w-10 aspect-square rounded-full">
+                            <div class="text-lg">
+                                <h5 class="font-semibold">Dika Jaya</h5>
+                                <p class="text-slate-600">Junior Class Graduate</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testi 4 -->
+                    <div class="swiper-slide">
+                        <div class="px-4 mt-4 w-full h-22 overflow-y-auto">
+                            <p class="text-lg text-justify">"Now I can make engaging games, my friends love playing them, and the class is fun. It's so much fun!!"</p>
+                        </div>
+                        <div class="flex items-center px-4 pb-2 mt-4 gap-4">
+                            <img src="assets/img/testimonial/rafatar.png" alt="Testimonial 4"
+                                class="w-10 aspect-square rounded-full">
+                            <div class="text-lg">
+                                <h5 class="font-semibold">Rafatar Malik</h5>
+                                <p class="text-slate-600">Beginner Class Graduate</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testi 5 -->
+                    <div class="swiper-slide">
+                        <div class="px-4 mt-4 w-full h-22 overflow-y-auto">
+                            <p class="text-lg text-justify">"I learned how to create a VR game world, learn how to promote the games we have created and much more."</p>
+                        </div>
+                        <div class="flex items-center px-4 pb-2 mt-4 gap-4">
+                            <img src="assets/img/testimonial/nelson.png" alt="Testimonial 5"
+                                class="w-10 aspect-square rounded-full">
+                            <div class="text-lg">
+                                <h5 class="font-semibold">Nelson Wijaya</h5>
+                                <p class="text-slate-600">Profesional Class Graduate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div> 
     </section>
 
     <!-- CONTACT -->
     <section class="bg-gradient-to-t from-blue-700 to-blue-500 relative" id="contact">
         <!-- SUBCSRIBE BOX -->
-        <div class="flex gap-20 items-center absolute left-1/2 -translate-x-1/2 -top-32 w-[85vw] bg-white rounded-xl px-6 py-10 dark:bg-slate-900 shadow-md">
+        <div
+            class="flex gap-20 items-center absolute left-1/2 -translate-x-1/2 -top-32 w-[85vw] bg-white rounded-xl px-6 py-10 dark:bg-slate-900 shadow-md">
             <div class="w-2/6 absolute left-12 bottom-0">
-                <img  class="w-full" src="assets/img/contact.png" alt="Contact Image">
-            </div> 
+                <img class="w-full" src="assets/img/contact.png" alt="Contact Image">
+            </div>
             <!-- SUBSCRIBE CONTENT -->
             <div class="pl-[38%]">
                 <h1 class="font-russo text-blue-500 text-5xl">Subscribe and get <br>information from email!</h1>
-                <p class="text-lg mt-2 mb-6 text-slate-900 dark:text-slate-100">Get more information about promo vocuhers and the latest class update</p>
+                <p class="text-lg mt-2 mb-6 text-slate-900 dark:text-slate-100">Get more information about promo
+                    vocuhers and the latest class update</p>
                 <form action="#" class="flex items-center gap-4">
-                    <input type="email" placeholder="Input your email" class="w-full p-2 rounded-md border-3 text-slate-900 dark:text-slate-100 border-slate-100 dark:border-slate-600 bg-white dark:bg-slate-600 outline-0 shadow-md" required>
+                    <input type="email" placeholder="Input your email"
+                        class="w-full p-2 rounded-md border-3 text-slate-900 dark:text-slate-100 border-slate-100 dark:border-slate-600 bg-white dark:bg-slate-600 outline-0 shadow-md"
+                        required>
                     <button
-                        class="bg-blue-500 text-white dark:text-slate-900 px-3 py-3 text-xl rounded-md flex items-center justify-center"
+                        class="bg-blue-500 text-white dark:text-slate-900 px-3 py-3 text-xl rounded-md flex items-center justify-center cursor-pointer"
                         type="submit"><i class="bx bxs-send-alt"></i></button>
                 </form>
             </div>
@@ -238,8 +568,8 @@
                     <li><a href="https://www.facebook.com/holodev.id/" target="_blank" class="hover:text-blue-100"><i
                                 class="bxl bx-facebook"></i></a>
                     </li>
-                    <li><a href="https://www.linked.in/holodev.id/" target="_blank"
-                            class="hover:text-blue-100"><i class="bxl bx-linkedin-square"></i></a>
+                    <li><a href="https://www.linked.in/holodev.id/" target="_blank" class="hover:text-blue-100"><i
+                                class="bxl bx-linkedin-square"></i></a>
                     </li>
                 </ul>
             </div>
@@ -307,6 +637,7 @@
 <!-- SCRIPT JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="assets/script.js"></script>
 
 </html>
