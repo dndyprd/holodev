@@ -17,15 +17,15 @@
     <nav class="fixed flex justify-between items-center w-screen top-0 left-0 text-white dark:text-slate-900 px-14 py-4 duration-200 z-50"
         id="navBar">
         <!-- NAVBAR LOGO -->
-        <a href="../index.html" class="flex items-center gap-2">
+        <a href="../index.html" class="flex items-center gap-2" data-aos="fade-down">
             <img class="w-11" id="logoNavbar" src="../assets/img/logo/logo-white.png" alt="HoloDev Logo">
             <h1 class="font-russo uppercase text-2xl">HoloDev</h1>
         </a>
         <!-- NAVBAR LIST -->
         <ul class="flex gap-8 text-lg font-semibold uppercase">
-            <li><a class="nav-list" href="../index.html">Home</a></li>
-            <li><a class="nav-list" href="../about.html">About Us</a></li>
-            <li class="relative">
+            <li data-aos="fade-down"><a class="nav-list" href="../index.html">Home</a></li>
+            <li data-aos="fade-down" data-aos-delay="150"><a class="nav-list" href="../about.html">About Us</a></li>
+            <li class="relative" data-aos="fade-down" data-aos-delay="300">
                 <a class="nav-list flex items-center gap-1 cursor-pointer" onclick="dropDown()">Product <i
                         class="bx bx-chevron-down text-2xl"></i></a>
                 <!-- DROPDOWN PRODUCT -->
@@ -35,7 +35,7 @@
                             <a href="#junior" class="product-list">Junior Package</a>
                         </li>
                         <li class="my-2">
-                            <a href="beginer.html" class="product-list">Beginner Package</a>
+                            <a href="beginner.html" class="product-list">Beginner Package</a>
                         </li>
                         <li>
                             <a href="intermediate.html" class="product-list">Intermediate Package</a>
@@ -46,15 +46,15 @@
                     </ul>
                 </div>
             </li>
-            <li><a class="nav-list" href="../index.html#testimonial">Testimonial</a></li>
+            <li data-aos="fade-down" data-aos-delay="450"><a class="nav-list" href="../index.html#testimonial">Testimonial</a></li>
         </ul>
         <!-- BUTTON -->
         <div class="flex items-center gap-4">
             <div class="btn-dark border-2 border-white dark:border-slate-900 text-white dark:text-slate-900 text-xl hover:bg-white hover:dark:bg-slate-900 hover:text-sky-400 px-2.5 py-0.75 rounded-md transition duration-300 cursor-pointer"
-                onclick="toggleDarkMode()">
+                onclick="toggleDarkMode()" data-aos="fade-down">
                 <i class="bx bx-moon" id="darkModeBtn"></i>
             </div>
-            <a href="#contact">
+            <a href="#contact" data-aos="fade-down" data-aos-delay="150">
                 <div
                     class="btn bg-white dark:bg-slate-900 text-sky-400 px-3 py-1.75 rounded-md uppercase font-semibold transition duration-300">
                     Contact Us
@@ -160,7 +160,7 @@
                         <a href="junior.html" class="hover:text-blue-100">Junior Package</a>
                     </li>
                     <li>
-                        <a href="beginer.html" class="hover:text-blue-100">Beginner Package</a>
+                        <a href="beginner.html" class="hover:text-blue-100">Beginner Package</a>
                     </li>
                     <li>
                         <a href="intermediate.html" class="hover:text-blue-100">Intermediate Package</a>
