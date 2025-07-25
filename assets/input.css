@@ -46,7 +46,7 @@
 /* SWIPER SLIDE */
 .swiper-button-next, 
 .swiper-button-prev {
-  @apply !z-40 !absolute !top-1/2 !-translate-y-1/2 !w-10 !h-10 !text-blue-500 !bg-white hover:!scale-110 duration-300 !rounded-full !shadow-md after:!text-sm after:!font-bold;
+  @apply !z-40 !absolute !top-1/2 !-translate-y-1/2 !w-10 !h-10 !text-blue-500 !bg-white dark:!bg-slate-900 hover:!scale-110 duration-300 !rounded-full !shadow-md after:!text-sm after:!font-bold;
 }
 
 .swiper-button-prev {
@@ -62,7 +62,7 @@
 }
 
 .swiper-pagination-bullet {
-  @apply !bg-gray-300 !opacity-100;
+  @apply !bg-gray-300 dark:!bg-slate-900 !opacity-100;
 }
 
 .swiper-pagination-bullet-active {
@@ -70,7 +70,7 @@
 }
  
 .swiper-slide{
-  @apply bg-white rounded-lg shadow-md p-3 mb-4 transition;
+  @apply bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 rounded-lg shadow-md p-3 mb-4 transition;
 }
 
 .team .swiper-slide{

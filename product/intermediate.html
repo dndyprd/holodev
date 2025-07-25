@@ -1,18 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HoloDev | Intermediate Package</title>
+    <title>HoloDev | Beginner Package</title>
     <link rel="shortcut icon" href="../assets/img/logo/logo.png" type="image/x-icon">
     <!-- Link CSS & Library -->
     <link rel="stylesheet" href="../assets/style.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="max-w-screen overflow-x-hidden scrollbar-hide bg-slate-50 dark:bg-slate-950 font-poppins">
+<body class="w-screen overflow-x-hidden bg-slate-50 dark:bg-slate-950 font-poppins"> 
     <!-- NAVIGATION BAR -->
     <nav class="fixed flex justify-between items-center w-screen top-0 left-0 text-white dark:text-slate-900 px-14 py-4 duration-200 z-50"
         id="navBar">
@@ -63,47 +65,164 @@
         </div>
     </nav>
 
-    <!-- HERO-->
-    <section class="flex items-center bg-gradient-to-t from-blue-500 to-sky-500 dark:from-blue-600 dark:to-sky-500 h-[95vh] overflow-y-hidden pl-30"
-        id="intermediate">
-            Paket Intermediate (Mahasiswa/Pencari Kerja)
-            Deskripsi:
-            Kelas intensif untuk yang ingin menguasai engine profesional dan membangun portofolio.
-
-            Platform: Unity (C#), Aseprite (pixel art)
-
-            Alur Belajar: 
-            Dasar Pemrograman C# (Variabel, function, OOP sederhana) 
-            Unity Essentials (Scene, prefab, component system) 
-            2D Game Development (Tilemap, animation, UI) 
-            Mini Project (Platformer/Roguelike) 
-            Portofolio & LinkedIn Optimization
+    <!-- HERO --> 
+    <section class="flex items-center bg-gradient-to-t from-blue-500 to-sky-500 dark:from-blue-600 dark:to-sky-500 h-[95vh] overflow-y-hidden pt-4 px-30" id="intermediate">
+        <!-- Content -->
+        <div class="text-white dark:text-slate-900 w-3/5 gap-2">
+            <h1 class="text-8xl font-archivo" data-aos="fade-right">Intermediate <br> Package</h1>
+            <h5 class="inline-block text-lg rounded-lg px-4 py-1 my-4 bg-white dark:bg-slate-900 text-blue-500" data-aos="fade-right" data-aos-delay="150">Age : 16 - 19 years old</h5>
+            <p class="text-lg w-4/5" data-aos="fade-right" data-aos-delay="300">Intensive class for those who want to master professional engines and build a portfolio</p>
+            <button class="product-btn" data-aos="fade-right" data-aos-delay="400">Join Class <i class='bx bx-form'></i></button>
+        </div> 
+        <!-- Image -->
+        <div class="absolute bottom-[5vh] right-[-2vw]">
+            <img class="w-[54vw]" src="../assets/img/home.png" alt="Home Image" data-aos="fade">
+        </div>
     </section>
 
-    <section class="h-screen"></section>
+    <!-- STUDY PLATFORM  -->
+    <section class="flex items-center px-30 py-32 gap-4 text-lg">
+        <div class="w-2/5"> 
+            <!-- Title -->
+            <h3 class="relative text-7xl font-medium text-blue-500 font-russo" data-aos="fade-right">Study <br> Platform
+                <span
+                    class="absolute top-12 left-12 font-cursive font-bold text-5xl text-slate-900 dark:text-slate-200 whitespace-nowrap" data-aos="fade-right" data-aos-delay="150">
+                    Platform</span>
+            </h3>
+            <p class="mt-4 text-slate-900 dark:text-slate-100" data-aos="fade-right" data-aos-delay="150">The game engine platform that we will use in the beginner package class</p>
+        </div>
+
+        <!-- Content  -->
+        <div class="flex flex-col gap-7 w-3/5 text-justify">
+            <div class="flex items-center bg-white dark:bg-slate-900 pl-8 py-8 pr-10 rounded-lg shadow-md gap-6" data-aos="fade-up" data-aos-delay="100">
+                <img src="../assets/img/product/logo/unity.png" alt="Unity logo" class="w-30 rounded-xl">
+                <div>
+                    <h2 class="text-2xl font-bold text-blue-500 mb-2">Unity</h2>
+                    <p class="text-slate-900 dark:text-slate-100 text-lg">A powerful game engine for creating 2D and 3D games using C# programming</p>
+                </div>
+            </div>
+            <div class="flex items-center bg-white dark:bg-slate-900 pl-8 py-8 pr-10 rounded-lg shadow-md gap-6" data-aos="fade-up" data-aos-delay="150">
+                <img src="../assets/img/product/logo/aseprite.png" alt="Aseprite logo" class="w-30 rounded-xl">
+                <div>
+                    <h2 class="text-2xl font-bold text-blue-500 mb-2">Aseprite</h2>
+                    <p class="text-slate-900 dark:text-slate-100 text-lg">A pixel art tool for creating and animating sprites, perfect for game graphics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARNING FLOW  -->
     
+    <section class="flex flex-col items-center px-30 py-10 gap-10 text-lg">
+        <h1 class="relative text-6xl font-russo text-blue-500" data-aos="fade-up">Learning Flow
+            <span
+                class="absolute top-8 left-12 font-cursive font-bold text-5xl text-slate-900 dark:text-slate-200 whitespace-nowrap">
+                Step of Step</span>
+        </h1>
+        <div class="flex flex-row justify-center mt-12 bg-white dark:bg-slate-900 px-20 py-12 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="200">
+            <!-- Left -->
+            <div class="learn-flow" data-aos="fade-right">
+                <div class="learn-point">
+                    <div class="circle relative line">1</div>
+                    <div class="w-4/5">
+                        <h2 class="font-semibold text-xl text-slate-950 dark:text-blue-500">Basic C# Programming</h2>
+                        <p class="text-slate-900 dark:text-slate-100">Learn the fundamentals of C# programming, including variables, functions, and a simple introduction to object-oriented programming</p>
+                    </div>
+                </div>
+                <div class="learn-point">
+                    <div class="circle relative line">3</div>
+                    <div class="w-4/5">
+                        <h2 class="font-semibold text-xl text-slate-950 dark:text-blue-500">2D Game Development</h2>
+                        <p class="text-slate-900 dark:text-slate-100">Start creating 2D games using tilemaps for level design, animations for characters and objects, and building essential UI elements</p>
+                    </div>
+                </div>
+                <div class="learn-point">
+                    <div class="circle">5</div>
+                    <div class="w-4/5">
+                        <h2 class="font-semibold text-xl text-slate-950 dark:text-blue-500">Portfolio & LinkedIn Optimization</h2>
+                        <p class="text-slate-900 dark:text-slate-100">Learn how to showcase your projects in a compelling portfolio and build a professional LinkedIn profile</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Right  -->
+            <div class="learn-flow text-end pt-12" data-aos="fade-left">
+                <div class="learn-point justify-end">
+                    <div class="w-4/5 text-end">
+                        <h2 class="font-semibold text-xl text-slate-950 dark:text-blue-500">Unity Essentials</h2>
+                        <p class="text-slate-900 dark:text-slate-100">Get familiar with key Unity concepts such as scene management, using prefabs for efficient object handling</p>
+                    </div>
+                    <div class="circle relative line">2</div>
+                </div>
+                <div class="learn-point justify-end">
+                    <div class="w-4/5 text-end">
+                        <h2 class="font-semibold text-xl text-slate-950 dark:text-blue-500">Mini Project</h2>
+                        <p class="text-slate-900 dark:text-slate-100">Apply your knowledge in a small-scale game project such as a platformer or roguelike to sharpen your development skills</p>
+                    </div>
+                    <div class="circle">4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARNING METHODS  --> 
+    <section class="flex flex-col gap-10 items-center px-30 pt-28 pb-90"> 
+        <!-- Title -->
+        <h1 class="relative text-6xl font-russo text-blue-500" data-aos="fade-up">Learning Method
+            <span
+                class="absolute top-8 left-32 font-cursive font-bold text-5xl text-slate-900 dark:text-slate-200 whitespace-nowrap">
+                What We Do</span>
+        </h1>
+        <!-- Content  -->
+        <div class="grid grid-cols-4 justify-center items-center gap-5 text-center text-lg mt-12">
+            <div class="flex flex-col items-center px-4 py-6 bg-slate-100 rounded-lg shadow-md h-full dark:bg-slate-900" data-aos="fade-up">
+                <img src="../assets/img/product/learn/live-mentoring.png" alt="Live Mentoring" class="w-48">
+                <h2 class="font-bold text-blue-500 text-3xl mt-8 mb-2">Live <br> Mentoring</h2>
+                <p class="text-lg text-slate-900 dark:text-slate-100">Taught directly about game dev by expert mentors.</p>
+            </div>
+            <div class="flex flex-col items-center px-4 py-6 bg-slate-100 rounded-lg shadow-md h-full dark:bg-slate-900" data-aos="fade-up" data-aos-delay="150">
+                <img src="../assets/img/product/learn/self-paced.png" alt="Self-paced Learning" class="w-48">
+                <h2 class="font-bold text-blue-500 text-3xl mt-8 mb-2">Self-paced Learning</h2>
+                <p class="text-lg text-slate-900 dark:text-slate-100">Learn independently anytime through text and video.</p>
+            </div>
+            <div class="flex flex-col items-center px-4 py-6 bg-slate-100 rounded-lg shadow-md h-full dark:bg-slate-900" data-aos="fade-up" data-aos-delay="300">
+                <img src="../assets/img/product/learn/project-based.png" alt="Project Base Learning" class="w-48">
+                <h2 class="font-bold text-blue-500 text-3xl mt-8 mb-2">Project-Based Learning</h2>
+                <p class="text-lg text-slate-900 dark:text-slate-100">Learn through direct practice in creating a game project</p>
+            </div>
+            <div class="flex flex-col items-center px-4 py-6 bg-slate-100 rounded-lg shadow-md h-full dark:bg-slate-900" data-aos="fade-up" data-aos-delay="450">
+                <img src="../assets/img/product/learn/discussion.png" alt="Forum Discussion" class="w-48">
+                <h2 class="font-bold text-blue-500 text-3xl mt-8 mb-2">Forum <br> Discussion</h2>
+                <p class="text-lg text-slate-900 dark:text-slate-100">Find friends with similar interests in game dev.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- CONTACT -->
     <section class="bg-gradient-to-t from-blue-700 to-blue-500 relative" id="contact">
         <!-- SUBCSRIBE BOX -->
-        <div class="flex gap-20 items-center absolute left-1/2 -translate-x-1/2 -top-32 w-[85vw] bg-white rounded-xl px-6 py-10 dark:bg-slate-900 shadow-md">
+        <div
+            class="flex gap-20 items-center absolute left-1/2 -translate-x-1/2 -top-32 w-[85vw] bg-white rounded-xl px-6 py-10 dark:bg-slate-900 shadow-md">
             <div class="w-2/6 absolute left-12 bottom-0">
-                <img  class="w-full" src="../assets/img/contact.png" alt="Contact Image">
-            </div> 
+                <img class="w-full" src="../assets/img/contact.png" alt="Contact Image">
+            </div>
             <!-- SUBSCRIBE CONTENT -->
-            <div class="pl-[38%]">
+            <div class="pl-[38%]" data-aos="fade-right" data-aos-delay="300">
                 <h1 class="font-russo text-blue-500 text-5xl">Subscribe and get <br>information from email!</h1>
-                <p class="text-lg mt-2 mb-6 text-slate-900 dark:text-slate-100">Get more information about promo vocuhers and the latest class update</p>
+                <p class="text-lg mt-2 mb-6 text-slate-900 dark:text-slate-100">Get more information about promo
+                    vocuhers and the latest class update</p>
                 <form action="#" class="flex items-center gap-4">
-                    <input type="email" placeholder="Input your email" class="w-full p-2 rounded-md border-3 text-slate-900 dark:text-slate-100 border-slate-100 dark:border-slate-600 bg-white dark:bg-slate-600 outline-0 shadow-md" required>
+                    <input type="email" placeholder="Input your email"
+                        class="w-full p-2 rounded-md border-3 text-slate-900 dark:text-slate-100 border-slate-100 dark:border-slate-600 bg-white dark:bg-slate-600 outline-0 shadow-md"
+                        required>
                     <button
                         class="bg-blue-500 text-white dark:text-slate-900 px-3 py-3 text-xl rounded-md flex items-center justify-center"
                         type="submit"><i class="bx bxs-send-alt"></i></button>
                 </form>
             </div>
         </div>
-        <div class="flex px-28 pt-64 pb-30 text-slate-100 dark:text-slate-900">
+        <div class="flex px-28 pt-64 pb-30 text-slate-100 dark:text-slate-900" data-aos="fade-up" data-aos-delay="200">
             <!-- CONTACT INFO -->
-            <div class="w-2/5 mr-12">
+            <div class="w-2/5 mr-12" data-aos="fade-up">
                 <div class="flex items-center gap-4">
                     <img src="../assets/img/logo/logo-white.png" id="logoContact" class="w-10" alt="Logo Holodev">
                     <h1 class="text-3xl font-russo">HoloDev Academy</h1>
@@ -114,45 +233,45 @@
                 <!-- SOCIAL MEDIA -->
                 <ul class="flex items-center text-4xl gap-6">
                     <li><a href="https://www.instagram.com/holodev.id/" target="_blank" class="hover:text-blue-100"><i
-                            class="bxl bx-instagram"></i></a>
+                                class="bxl bx-instagram"></i></a>
                     </li>
                     <li><a href="https://www.facebook.com/holodev.id/" target="_blank" class="hover:text-blue-100"><i
-                            class="bxl bx-twitter-x"></i></a>
+                                class="bxl bx-twitter-x"></i></a>
                     </li>
                     <li><a href="https://www.tiktok.com/@holodev.id/" target="_blank" class="hover:text-blue-100"><i
-                            class="bxl bx-tiktok"></i></a>
+                                class="bxl bx-tiktok"></i></a>
                     </li>
                     <li><a href="https://www.facebook.com/holodev.id/" target="_blank" class="hover:text-blue-100"><i
-                            class="bxl bx-facebook"></i></a>
+                                class="bxl bx-facebook"></i></a>
                     </li>
-                    <li><a href="https://www.linked.in/holodev.id/" target="_blank"
-                            class="hover:text-blue-100"><i class="bxl bx-linkedin-square"></i></a>
+                    <li><a href="https://www.linked.in/holodev.id/" target="_blank" class="hover:text-blue-100"><i
+                                class="bxl bx-linkedin-square"></i></a>
                     </li>
                 </ul>
             </div>
             <!-- NAVIGATION -->
-            <div class="w-1/5">
+            <div class="w-1/5" data-aos="fade-up" data-aos-delay="150">
                 <h3 class="text-3xl font-russo mb-4">Navigation</h3>
                 <ul class="text-lg flex flex-col gap-1">
                     <li>
-                        <a href="#home" class="hover:text-blue-100">Home</a>
+                        <a href="../index.html#home" class="hover:text-blue-100">Home</a>
                     </li>
                     <li>
-                        <a href="#about" class="hover:text-blue-100">About Us</a>
+                        <a href="../about.html" class="hover:text-blue-100">About Us</a>
                     </li>
                     <li>
-                        <a href="#whyus" class="hover:text-blue-100">Why Us</a>
+                        <a href="../index.html#whyus" class="hover:text-blue-100">Why Us</a>
                     </li>
                     <li>
-                        <a href="#faq" class="hover:text-blue-100">FAQ</a>
+                        <a href="../index.html#faq" class="hover:text-blue-100">FAQ</a>
                     </li>
                     <li>
-                        <a href="#testimonial" class="hover:text-blue-100">Testimonial</a>
+                        <a href="../index.html#testimonial" class="hover:text-blue-100">Testimonial</a>
                     </li>
                 </ul>
             </div>
             <!-- PRODUCT LIST -->
-            <div class="w-1/5">
+            <div class="w-1/5" data-aos="fade-up" data-aos-delay="300">
                 <h3 class="text-3xl font-russo mb-4">Product</h3>
                 <ul class="text-lg flex flex-col gap-1">
                     <li>
@@ -170,7 +289,7 @@
                 </ul>
             </div>
             <!-- CONTACT US -->
-            <div class="w-1/5">
+            <div class="w-1/5" data-aos="fade-up" data-aos-delay="450">
                 <h3 class="text-3xl font-russo mb-4">Contact Us</h3>
                 <ul class="text-lg flex flex-col gap-1">
                     <li class="flex items-center gap-2 hover:text-blue-100">
@@ -194,6 +313,7 @@
 <!-- SCRIPT JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../assets/script.js"></script>
 
 </html>
