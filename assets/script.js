@@ -1,5 +1,3 @@
-AOS.init();
-
 // TEAM SLIDESHOW 
 document.addEventListener('DOMContentLoaded', () => {
   new Swiper('.swiper', {
@@ -35,9 +33,12 @@ function getLogoPath(filename) {
   return isProductPage ? `../assets/img/logo/${filename}` : `assets/img/logo/${filename}`;
 }
 
+// DEFAULT LOGO SOURCE
 let logoSource = getLogoPath("logo-white.png");
 
+// SET DAR KMODE
 function toggleDarkMode() { 
+    // CHANGE ICON & LOGO
     if (darkModeBtn.classList.contains('bx-moon')) {
         darkModeBtn.classList.remove('bx-moon');
         darkModeBtn.classList.add('bx-sun');
@@ -47,7 +48,7 @@ function toggleDarkMode() {
         darkModeBtn.classList.add('bx-moon');
         logoSource = getLogoPath("logo-white.png");
     }
-     
+    
     logoContact.src = logoSource;
      
     if (!navBar.classList.contains('active')) {

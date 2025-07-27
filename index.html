@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="assets/style.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"> 
 </head>
 
 <body class="max-w-screen overflow-x-hidden scrollbar-hide bg-slate-50 dark:bg-slate-950 font-poppins">
@@ -19,15 +18,15 @@
     <nav class="fixed flex justify-between items-center w-screen top-0 left-0 text-white dark:text-slate-900 px-14 py-4 duration-200 z-50"
         id="navBar">
         <!-- NAVBAR LOGO -->
-        <a href="index.html" class="flex items-center gap-2" data-aos="fade-down">
+        <a href="index.html" class="flex items-center gap-2">
             <img class="w-11" id="logoNavbar" src="assets/img/logo/logo-white.png" alt="HoloDev Logo">
             <h1 class="font-russo uppercase text-2xl">HoloDev</h1>
         </a>
         <!-- NAVBAR LIST -->
         <ul class="flex gap-8 text-lg font-semibold uppercase">
-            <li data-aos="fade-down"><a class="nav-list" href="#home">Home</a></li>
-            <li data-aos="fade-down" data-aos-delay="150"><a class="nav-list" href="about.html">About Us</a></li>
-            <li data-aos="fade-down" data-aos-delay="300" class="relative">
+            <li><a class="nav-list" href="#home">Home</a></li>
+            <li><a class="nav-list" href="about.html">About Us</a></li>
+            <li class="relative">
                 <a class="nav-list flex items-center gap-1 cursor-pointer" onclick="dropDown()">Product
                     <i class="bx bx-chevron-down text-2xl" id="productChevron"></i>
                 </a>
@@ -49,15 +48,15 @@
                     </ul>
                 </div>
             </li>
-            <li data-aos="fade-down" data-aos-delay="450"><a class="nav-list" href="#testimonial">Testimonial</a></li>
+            <li data-aos-delay="450"><a class="nav-list" href="#testimonial">Testimonial</a></li>
         </ul>
         <!-- BUTTON -->
         <div class="flex items-center gap-4">
             <div class="btn-dark px-2.5 pt-1 pb-0.75 border-2 border-white dark:border-slate-900 text-white dark:text-slate-900 text-xl hover:bg-white hover:dark:bg-slate-900 hover:text-sky-400 rounded-md transition duration-300 cursor-pointer"
-                onclick="toggleDarkMode()" data-aos="fade-down" data-aos-delay="150">
+                onclick="toggleDarkMode()">
                 <i class="bx bx-moon" id="darkModeBtn"></i>
             </div>
-            <a href="#contact" data-aos="fade-down" data-aos-delay="300">
+            <a href="#contact">
                 <div
                     class="btn bg-white dark:bg-slate-900 text-sky-400 px-3 py-1.75 rounded-md uppercase font-semibold transition duration-300">
                     Contact Us
@@ -72,12 +71,12 @@
         id="home">
         <!-- CONTENT -->
         <div class="w-1/2 text-white dark:text-slate-900">
-            <h3 class="mt-8 mb-2 text-2xl font-medium" data-aos="fade-right">GAME DEV ACADEMY #1 IN INDONESIA</h3>
-            <h1 class="mb-4 text-6xl leading-18 font-archivo" data-aos="fade-right" data-aos-delay="150">Unlock Your Game <br>Dev Potential</h1>
+            <h3 class="mt-8 mb-2 text-2xl font-medium">GAME DEV ACADEMY #1 IN INDONESIA</h3>
+            <h1 class="mb-4 text-6xl leading-18 font-archivo">Unlock Your Game <br>Dev Potential</h1>
             <div class="text-2xl">
                 <span id="typedHome"></span>
             </div>
-            <a href="#product" data-aos="fade-right" data-aos-delay="300">
+            <a href="#product">
                 <button type="button"
                     class="mt-14 flex items-center duration-300 gap-2 text-xl font-semibold hover:text-blue-500 border-2 border-white hover:bg-white rounded-md px-5 py-2 text-center me-2 mb-2 cursor-pointer dark:border-slate-900 dark:hover:bg-slate-900 dark:hover:text-blue-600">
                     Learn More <i class="bx bx-search"></i>
@@ -116,40 +115,40 @@
         <div class="w-[35vw]">
             <div class="relative flex items-center justify-center mb-8">
                 <img class="w-96 ml-24 border-8 border-white dark:border-slate-900 shadow-md rounded-4xl"
-                    src="assets/img/company/building.jpg" alt="Company Lobby" data-aos="fade-up">
+                    src="assets/img/company/building.jpg" alt="Company Lobby">
                 <img class="absolute bottom-10 left-0 w-64 border-8 border-white dark:border-slate-900 shadow-md rounded-4xl"
-                    src="assets/img/company/office.jpg" alt="Company Internal" data-aos="fade-up" data-aos-delay="150">
+                    src="assets/img/company/office.jpg" alt="Company Internal">
             </div>
         </div>
         <div class="w-[45vw]">
             <div class="flex items-center flex-col">
-                <h1 class="relative text-5xl font-bold text-blue-500 font-russo mb-8" data-aos="fade-up">
+                <h1 class="relative text-5xl font-bold text-blue-500 font-russo mb-8">
                     KNOW MORE
-                    <span data-aos="fade-up" data-aos-delay="150" class="absolute top-6 left-18 font-cursive text-4xl text-slate-900 dark:text-slate-200">About
+                    <span class="absolute top-6 left-18 font-cursive text-4xl text-slate-900 dark:text-slate-200">About
                         Us</span>
                 </h1>
             </div>
-            <p data-aos="fade-right" class="text-justify text-lg leading-7 indent-12 text-slate-900 dark:text-slate-200">
+            <p class="text-justify text-lg leading-7 indent-12 text-slate-900 dark:text-slate-200">
                 HoloDev Agency is Indonesia's leading game developer academy, dedicated to teaching game creation from
                 beginner to expert levels. We empower students of all ages, from young children to professionals, with
                 practical skills and industry insights.
             </p>
             <ul class="mt-3 text-slate-900 dark:text-slate-200 text-lg">
-                <li data-aos="fade-right" data-aos-delay="150" class="flex items-center gap-2">
+                <li class="flex items-center gap-2">
                     <i class='bx bx-medal-star-alt text-4xl'></i>
                     <div>
                         <h5 class="font-bold">No. 1 Game Dev Academy in Indonesia</h5>
                         <p class="text-md">Recognized by the Ministry of Education, producing excellent graduates.</p>
                     </div>
                 </li>
-                <li data-aos="fade-right" data-aos-delay="300" class="flex items-center gap-2 my-3">
+                <li class="flex items-center gap-2 my-3">
                     <i class='bx bx-medal-star-alt text-4xl'></i>
                     <div>
                         <h5 class="font-bold">12+ Published game on Many Platforms</h5>
                         <p class="text-md">Game has been published on many platforms Steam, Play Store, etc.</p>
                     </div>
                 </li>
-                <li data-aos="fade-right" data-aos-delay="450" class="flex items-center gap-2">
+                <li data-aos-delay="450" class="flex items-center gap-2">
                     <i class='bx bx-medal-star-alt text-4xl'></i>
                     <div>
                         <h5 class="font-bold">Best Game EduTech Startup 2024</h5>
@@ -159,13 +158,13 @@
             </ul>
             <!-- BUTTON -->
             <div class="flex items-center float-right mt-10 gap-4">
-                <a href="#product" class="inline-block text-lg" data-aos="fade-up">
+                <a href="#product" class="inline-block text-lg">
                     <button type="button"
                         class="flex items-center gap-1 font-semibold duration-300 text-blue-500 hover:text-white dark:hover:text-slate-900 border-2 border-blue-500 hover:bg-blue-500 rounded-md px-4 py-1.5 cursor-pointer">
                         Show Product <i class='bx bx-chevron-down text-2xl'></i>
                     </button>
                 </a>
-                <a href="about.html" class="inline-block text-lg" data-aos="fade-up" data-aos-delay="150">
+                <a href="about.html" class="inline-block text-lg">
                     <button type="button"
                         class="flex items-center gap-2 font-semibold duration-300 text-white dark:text-slate-900 border-2 border-blue-500 hover:border-blue-600 bg-blue-500 hover:bg-blue-600 rounded-md px-4 py-1.5 cursor-pointer">
                         See More <i class="bx bx-arrow-right-stroke text-2xl"></i>
@@ -178,33 +177,33 @@
     <!-- WHY US -->
     <section class="flex justify-center px-30 py-16 gap-12" id="whyus">
         <div class="whitespace-nowrap m-auto">
-            <h1 class="mt-3 mb-6 text-5xl text-blue-500 relative font-russo whitespace-nowrap" data-aos="fade-right">WHY <br>CHOOSE US
-                <span data-aos="fade-right" data-aos-delay="150"
+            <h1 class="mt-3 mb-6 text-5xl text-blue-500 relative font-russo whitespace-nowrap">WHY <br>CHOOSE US
+                <span
                     class="absolute -bottom-4 font-bold left-2 font-cursive text-4xl text-slate-900 dark:text-slate-200">Our
                     Benefits</span>
             </h1>
         </div>
         <!-- CONTENT -->
         <div class="bg-white dark:bg-slate-900 flex justify-between text-center py-8 px-10 gap-6 rounded-xl">
-            <div data-aos="fade-up">
+            <div>
                 <h5 class="text-7xl text-blue-500 dark:text-slate-100"><i class="bx bx-education"></i></h5>
                 <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-blue-500 whitespace-nowrap">Expert Mentors
                 </h3>
                 <p class="text-slate-900 dark:text-slate-100">Learn from gaming industry veterans.</p>
             </div>
-            <div data-aos="fade-up" data-aos-delay="150">
+            <div>
                 <h5 class="text-7xl text-blue-500 dark:text-slate-100"><i class='bx bx-joystick'></i> </h5>
                 <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-blue-500 whitespace-nowrap">Based Curriculum
                 </h3>
                 <p class="text-slate-900 dark:text-slate-100">Graduate with 3+ published games.</p>
             </div>
-            <div data-aos="fade-up" data-aos-delay="300">
+            <div>
                 <h5 class="text-7xl text-blue-500 dark:text-slate-100"><i class="bx bx-briefcase-alt-2"></i></h5>
                 <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-blue-500 whitespace-nowrap">Job Focused
                     Traine</h3>
                 <p class="text-slate-900 dark:text-slate-100">92% job placement rate with 50+ studio partners.</p>
             </div>
-            <div data-aos="fade-up" data-aos-delay="450">
+            <div>
                 <h5 class="text-7xl text-blue-500 dark:text-slate-100"><i class='bx bx-stopwatch'></i></h5>
                 <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-blue-500 whitespace-nowrap">Flexible Learning
                 </h3>
@@ -217,15 +216,15 @@
     <!-- PRODUCT -->
     <section class="px-28 py-20" id="product">
         <div class="flex mx-auto mb-16">
-            <h1 class="relative flex m-auto text-5xl font-bold text-blue-500 font-russo" data-aos="fade-up">PRODUCT
-                <span data-aos="fade-up" data-aos-delay="150"
+            <h1 class="relative flex m-auto text-5xl font-bold text-blue-500 font-russo">PRODUCT
+                <span
                     class="absolute top-6 -left-12 font-cursive text-4xl text-slate-900 dark:text-slate-200 whitespace-nowrap">Choose
                     Your Package</span>
             </h1>
         </div>
         <div class="flex gap-4">
             <!-- JUNIOR PACKAGE -->
-            <div data-aos="fade-up"
+            <div
                 class="group w-1/4 bg-white dark:bg-slate-900 shadow-md rounded-md px-4 pt-4 pb-8 hover:scale-105 duration-200">
                 <div class="w-full overflow-hidden aspect-video rounded-md mb-4">
                     <img src="assets/img/product/junior.png" alt="Junior Pacakage Image"
@@ -246,7 +245,7 @@
                 </div>
             </div>
             <!-- BEGINNER PACKAGE -->
-            <div data-aos="fade-up" data-aos-delay="150"
+            <div
                 class="group w-1/4 bg-white dark:bg-slate-900 shadow-md rounded-md px-4 pt-4 pb-8 hover:scale-105 duration-200">
                 <div class="w-full overflow-hidden aspect-video rounded-md mb-4">
                     <img src="assets/img/product/beginner.png" alt="Beginner Pacakage Image"
@@ -267,7 +266,7 @@
                 </div>
             </div>
             <!-- Intermediate Package -->
-            <div data-aos="fade-up" data-aos-delay="300"
+            <div
                 class="group w-1/4 bg-white dark:bg-slate-900 shadow-md rounded-md px-4 pt-4 pb-8 hover:scale-105 duration-200">
                 <div class="w-full overflow-hidden aspect-video rounded-md mb-4">
                     <img src="assets/img/product/intermediate.png" alt="Intermediate Pacakage Image"
@@ -289,7 +288,7 @@
                 </div>
             </div>
             <!-- Profesional Package -->
-            <div data-aos="fade-up" data-aos-delay="150"
+            <div
                 class="group w-1/4 bg-white dark:bg-slate-900 shadow-md rounded-md px-4 pt-4 pb-8 hover:scale-105 duration-200">
                 <div class="w-full overflow-hidden aspect-video rounded-md mb-4">
                     <img src="assets/img/product/profesional.png" alt="Profesional Pacakage Image"
@@ -317,23 +316,23 @@
     <section class="px-28 py-20 flex items-center gap-18" id="faq">
         <div class="w-2/5 text-lg">
             <!-- Title -->
-            <h3 class="relative text-5xl font-medium text-blue-500 font-russo" data-aos="fade-right">Frequently Asked Question
-                <span data-aos="fade-right" data-aos-delay="150"
+            <h3 class="relative text-5xl font-medium text-blue-500 font-russo">Frequently Asked Question
+                <span
                     class="absolute top-8 left-12 font-cursive font-bold text-4xl text-slate-900 dark:text-slate-200 whitespace-nowrap">
                     FAQ</span>
             </h3>
             <!-- Information & Button -->
-            <p class="mt-6 text-justify text-slate-900 dark:text-slate-100" data-aos="fade-right" data-aos-delay="150">Some questions that prospective students
+            <p class="mt-6 text-justify text-slate-900 dark:text-slate-100">Some questions that prospective students
                 often ask us regarding the
                 game dev courses that we offer. Still have questions? Chat our team!</p>
-            <a href="https://wa.me/081234567890" class="inline-block mt-8" data-aos="fade-right">
+            <a href="https://wa.me/081234567890" class="inline-block mt-8">
                 <div
                     class="flex items-center gap-2 px-4 py-2 rounded-md border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-slate-100 dark:hover:text-slate-900">
                     <i class="bxl bx-whatsapp text-2xl"></i> Contact Us
                 </div>
             </a>
         </div>
-        <div class="w-3/5 relative flex flex-col gap-5" data-aos="fade-up">
+        <div class="w-3/5 relative flex flex-col gap-5">
             <!-- FAQ 1 -->
             <div class="accordion">
                 <div class="accordion-header">
@@ -423,16 +422,16 @@
     <section class="px-28 pt-20 pb-56" id="testimonial">
         <!-- Title -->
         <div class="flex items-center flex-col">
-            <h1 class="relative text-5xl font-bold text-blue-500 font-russo" data-aos="fade-up">TESTIMONIAL
-                <span data-aos="fade-up" data-aos-delay="150"
+            <h1 class="relative text-5xl font-bold text-blue-500 font-russo">TESTIMONIAL
+                <span
                     class="absolute top-6 -left-4 font-cursive text-4xl text-slate-900 dark:text-slate-200 whitespace-nowrap">
                     What Our Alumni Say</span>
             </h1>
-            <p data-aos="fade-up" data-aos-delay="300" class="mt-10 mb-12 text-lg text-center">Hear from our students and alumni who transformed their passion
+            <p class="mt-10 mb-12 text-lg text-center text-slate-900 dark:text-slate-100">Hear from our students and alumni who transformed their passion
                 into careers. <br>Don't just take our word for it—see what our students say!</p>
         </div>  
         <!-- Testi Slideshow -->
-        <div class="relative w-full" data-aos="fade-up" data-aos-delay="150">
+        <div class="relative w-full">
             <div class="swiper testi">
                 <div class="swiper-wrapper">
                     <!-- Testi 1 -->
@@ -530,7 +529,7 @@
                 <img class="w-full" src="../assets/img/contact.png" alt="Contact Image">
             </div>
             <!-- SUBSCRIBE CONTENT -->
-            <div class="pl-[38%]" data-aos="fade-right" data-aos-delay="300">
+            <div class="pl-[38%]">
                 <h1 class="font-russo text-blue-500 text-5xl">Subscribe and get <br>information from email!</h1>
                 <p class="text-lg mt-2 mb-6 text-slate-900 dark:text-slate-100">Get more information about promo
                     vocuhers and the latest class update</p>
@@ -544,9 +543,9 @@
                 </form>
             </div>
         </div>
-        <div class="flex px-28 pt-64 pb-30 text-slate-100 dark:text-slate-900" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex px-28 pt-64 pb-30 text-slate-100 dark:text-slate-900">
             <!-- CONTACT INFO -->
-            <div class="w-2/5 mr-12" data-aos="fade-up">
+            <div class="w-2/5 mr-12">
                 <div class="flex items-center gap-4">
                     <img src="../assets/img/logo/logo-white.png" id="logoContact" class="w-10" alt="Logo Holodev">
                     <h1 class="text-3xl font-russo">HoloDev Academy</h1>
@@ -574,14 +573,14 @@
                 </ul>
             </div>
             <!-- NAVIGATION -->
-            <div class="w-1/5" data-aos="fade-up" data-aos-delay="150">
+            <div class="w-1/5">
                 <h3 class="text-3xl font-russo mb-4">Navigation</h3>
                 <ul class="text-lg flex flex-col gap-1">
                     <li>
                         <a href="#home" class="hover:text-blue-100">Home</a>
                     </li>
                     <li>
-                        <a href="#about" class="hover:text-blue-100">About Us</a>
+                        <a href="about.html" class="hover:text-blue-100">About Us</a>
                     </li>
                     <li>
                         <a href="#whyus" class="hover:text-blue-100">Why Us</a>
@@ -595,25 +594,25 @@
                 </ul>
             </div>
             <!-- PRODUCT LIST -->
-            <div class="w-1/5" data-aos="fade-up" data-aos-delay="300">
+            <div class="w-1/5">
                 <h3 class="text-3xl font-russo mb-4">Product</h3>
                 <ul class="text-lg flex flex-col gap-1">
                     <li>
-                        <a href="junior.html" class="hover:text-blue-100">Junior Package</a>
+                        <a href="product/junior.html" class="hover:text-blue-100">Junior Package</a>
                     </li>
                     <li>
-                        <a href="beginner.html" class="hover:text-blue-100">Beginner Package</a>
+                        <a href="product/beginner.html" class="hover:text-blue-100">Beginner Package</a>
                     </li>
                     <li>
-                        <a href="intermediate.html" class="hover:text-blue-100">Intermediate Package</a>
+                        <a href="product/intermediate.html" class="hover:text-blue-100">Intermediate Package</a>
                     </li>
                     <li>
-                        <a href="profesional.html" class="hover:text-blue-100">Profesional Package</a>
+                        <a href="product/profesional.html" class="hover:text-blue-100">Profesional Package</a>
                     </li>
                 </ul>
             </div>
             <!-- CONTACT US -->
-            <div class="w-1/5" data-aos="fade-up" data-aos-delay="450">
+            <div class="w-1/5">
                 <h3 class="text-3xl font-russo mb-4">Contact Us</h3>
                 <ul class="text-lg flex flex-col gap-1">
                     <li class="flex items-center gap-2 hover:text-blue-100">
@@ -636,8 +635,7 @@
 </body>
 <!-- SCRIPT JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
 <script src="assets/script.js"></script>
 
 </html>

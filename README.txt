@@ -21,18 +21,20 @@ CUSTOM CLASS TAILWIND
 .accordion, .accordion-header & .accordion-content
 -- Custom class untuk style accordion
 
+CUSTOM FONT GOOGLE FONTS (CDN)
+--font-archivo: Font dari Archivo Black
+--font-poppins: Font dari Poppins
+--font-cursive: Font dari Nothing You Could Do
+
 SLIDER FROM SWIPERJS CDN
 - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 ICONS FROM BOX ICONS CDN
 - <link rel="stylesheet" href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css">
 - <link rel="stylesheet" href="https://cdn.boxicons.com/fonts/basic/boxicons-brands.min.css">
 
 TYPED JS CDN
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ 
 
-CUSTOM FONT GOOGLE FONTS (CDN)
---font-archivo: Font dari Archivo Black
---font-poppins: Font dari Poppins
---font-cursive: Font dari Nothing You Could Do
