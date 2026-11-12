@@ -1,9 +1,18 @@
 // TEAM SLIDESHOW 
 document.addEventListener('DOMContentLoaded', () => {
   new Swiper('.swiper', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 16,
     loop: true,
+
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
 
      autoplay: {
       delay: 3000,  
@@ -59,6 +68,7 @@ function toggleDarkMode() {
 
 // NAVBAR TOGGLE 
 const navBar = document.getElementById("navBar");
+const mobileMenuToggle = document.getElementById("mobileMenuToggle");
 
 window.addEventListener("scroll", function () { 
   if (window.scrollY >= 75) {
@@ -70,17 +80,45 @@ window.addEventListener("scroll", function () {
   }
 });
 
+function closeMobileMenu() {
+  if (!navBar || !mobileMenuToggle) return;
+
+  navBar.classList.remove("menu-open");
+  mobileMenuToggle.setAttribute("aria-expanded", "false");
+  mobileMenuToggle.setAttribute("aria-label", "Buka menu navigasi");
+
+  const icon = mobileMenuToggle.querySelector("i");
+  icon.classList.remove("bx-x");
+  icon.classList.add("bx-menu");
+}
+
+function toggleMobileMenu() {
+  if (!navBar || !mobileMenuToggle) return;
+
+  const isOpen = navBar.classList.toggle("menu-open");
+  mobileMenuToggle.setAttribute("aria-expanded", String(isOpen));
+  mobileMenuToggle.setAttribute("aria-label", isOpen ? "Tutup menu navigasi" : "Buka menu navigasi");
+
+  const icon = mobileMenuToggle.querySelector("i");
+  icon.classList.toggle("bx-menu", !isOpen);
+  icon.classList.toggle("bx-x", isOpen);
+}
+
+navBar.querySelectorAll("a[href]").forEach(link => {
+  link.addEventListener("click", closeMobileMenu);
+});
+
 // DROPDOWN 
 function dropDown(){
   const dropDown = document.getElementById("dropdownProduct");
-  const chevron = document.getElementById("productChevron");
+  const chevron = document.getElementById("productChevron") || navBar.querySelector("#navLinks .bx-chevron-down");
 
   if (dropDown.classList.contains("hidden")) {
     dropDown.classList.remove("hidden");
-    chevron.classList.add("rotate-180");
+    if (chevron) chevron.classList.add("rotate-180");
   } else {
     dropDown.classList.add("hidden");
-    chevron.classList.remove("rotate-180");
+    if (chevron) chevron.classList.remove("rotate-180");
   }
 }
 

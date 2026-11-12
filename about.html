@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">  
 </head>
 
-<body class="font-poppins bg-slate-50 dark:bg-slate-950 overflow-x-hidden">
+<body class="about-page font-poppins bg-slate-50 dark:bg-slate-950 overflow-x-hidden">
     <!-- NAVIGATION BAR -->
     <nav class="fixed flex justify-between items-center w-screen top-0 left-0 text-white dark:text-slate-900 px-14 py-4 duration-200 z-50"
         id="navBar">
@@ -23,7 +23,7 @@
             <h1 class="font-russo uppercase text-2xl">HoloDev</h1>
         </a>
         <!-- NAVBAR LIST -->
-        <ul class="flex gap-8 text-lg font-semibold uppercase">
+        <ul id="navLinks" class="flex gap-8 text-lg font-semibold uppercase">
             <li><a class="nav-list" href="index.html#home">Home</a></li>
             <li><a class="nav-list" href="#about">About Us</a></li>
             <li class="relative">
@@ -62,6 +62,10 @@
                     Contact Us
                 </div>
             </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" onclick="toggleMobileMenu()"
+                aria-label="Buka menu navigasi" aria-controls="navLinks" aria-expanded="false">
+                <i class="bx bx-menu" aria-hidden="true"></i>
+            </button>
         </div>
     </nav>
 
@@ -89,9 +93,6 @@
                 strong storytelling elements, engaging gameplay, and captivating visuals. We always follow technological
                 developments and industry trends to ensure every product we produce has high artistic and technical
                 value, for both local and international markets.</p>
-            <div class="my-2 mx-18 p-3 bg-white dark:bg-slate-900 rounded-lg shadow-lg flex-shrink-0">
-                <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/3-rzmhioRow?si=51MZM6iLABbDw_Th" title="Holodev Academy Company Profile" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
             <p class="indent-12 leading-relaxed">In addition, HoloDev also offers various learning programs related to the world of
                 gaming. These range from basic classes for beginners, intensive training like bootcamps, to real-life
                 project mentoring for participants looking to build a professional portfolio. All classes are designed
@@ -266,7 +267,7 @@
                         <div class="px-2">
                             <div class="pb-4">
                                 <h2 class="text-3xl text-blue-500 font-russo">Satria Ramadhani</h2>
-                                <p class="text-xl font-semibold">VFX ARTIST & SOUND DESIGNER</p>
+                                <p class="text-xl font-semibold">GAME ARTIST</p>
                                 <p class="text-lg mt-1">"Be yourself and never surender"</p>
                             </div>
                             <div class="flex justify-end mt-2 gap-2 text-3xl">
@@ -346,7 +347,7 @@
                     Location</span>
             </h1>
         </div>
-        <div class="flex justify-center items-center">
+        <div class="location-content flex justify-center items-center">
             <div
                 class="flex flex-col justify-center w-full text-lg text-slate-900 dark:text-slate-100 whitespace-nowrap">
                 <div>
@@ -372,7 +373,7 @@
         <div
             class="flex gap-20 items-center absolute left-1/2 -translate-x-1/2 -top-32 w-[85vw] bg-white rounded-xl px-6 py-10 dark:bg-slate-900 shadow-md">
             <div class="w-2/6 absolute left-12 bottom-0">
-                <img class="w-full" src="../assets/img/contact.png" alt="Contact Image">
+                <img class="w-full" src="assets/img/contact.png" alt="Contact Image">
             </div>
             <!-- SUBSCRIBE CONTENT -->
             <div class="pl-[38%]">
@@ -393,7 +394,7 @@
             <!-- CONTACT INFO -->
             <div class="w-2/5 mr-12">
                 <div class="flex items-center gap-4">
-                    <img src="../assets/img/logo/logo-white.png" id="logoContact" class="w-10" alt="Logo Holodev">
+                    <img src="assets/img/logo/logo-white.png" id="logoContact" class="w-10" alt="Logo Holodev">
                     <h1 class="text-3xl font-russo">HoloDev Academy</h1>
                 </div>
                 <p class="text-justify text-lg mt-4 mb-8">Game Developer Academy #1 in Indonesia. Improve your game
